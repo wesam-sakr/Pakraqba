@@ -1,0 +1,308 @@
+body{
+    direction: ltr;
+}
+.nice-select .current {
+    float: left;
+}
+.nice-select .option {
+    text-align: left;
+}
+.nice-select:after {
+    right: 12px;
+    left: unset;
+}
+.ms-lg-4 {
+    margin-right: 1.5rem!important;
+    margin-left: 0  !important;
+}
+.me-lg-3 {
+    margin-left: 1rem!important;
+    margin-right: 0 !important;
+}
+.me-5 {
+    margin-left: 3rem!important;
+    margin-right: 0 !important;
+}
+.pe-2 {
+    padding-left: 0.5rem!important;
+}
+.text-end {
+    text-align: left!important;
+}
+.bi-chevron-left::before{
+    transform: rotate(180deg);
+}
+.accordion-button::after {
+    margin-left: auto;
+    margin-right: 0;
+}
+nav .top-nav-notification .sub-menu {
+    left: auto;
+    right: 0;
+}
+.bottom-nav .bottom-nav-links .virtical-sub-menu.active {
+    padding-right: 190px;
+    padding-left: 0px;
+}
+.bottom-nav .bottom-nav-links .virtical-sub-menu>ul {
+    left: auto;
+    right: 0;
+}
+.bottom-nav .bottom-nav-links .virtical-sub-menu>ul>li {
+    margin: 0 15px 0 0;
+}
+nav .top-nav-notification .sub-menu>div>a {
+    flex-direction: row-reverse;
+}
+nav .top-nav-notification .sub-menu>div>a>img {
+    margin-left: 0;
+    margin-right: 5px;
+}
+nav .top-nav-user .sub-menu {
+    right: 0%;
+    left: auto;
+}
+nav .sub-menu::before {
+    right: 25px;
+    left: auto;
+}
+.bottom-nav .bottom-nav-links>li {
+    border-right: 1px solid var(--gray);
+    border-left: 0;
+}
+.bottom-nav .bottom-nav-links>li:last-child {
+    border-right: 0;
+}
+.header-content .card {
+    margin-left: auto;
+    margin-right: 0;
+}
+header .header-content .nav-pills .nav-item .nav-link2 {
+    transform: translateX(-1.3rem);
+}
+header .header-content .nav-pills .nav-link3 {
+    transform: translateX(-2.6rem);
+}
+.explore-more .item .img {
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.explore-new-projects .item .item-img span {
+    left: -60px;
+    right: auto;
+    transform: rotate(-40deg);
+}
+.features .feature img {
+    margin-right: 40px;
+    margin-left: 0px;
+}
+.about-us .service>img {
+    border-radius: 270px 27px 27px 270px;
+}
+.service .icon {
+    left: 0;
+    right: auto;
+    transform: translate(50%, -50%);
+}
+footer .footer-content .social-icons .icon {
+    margin: 1rem 1rem 0 0
+}
+.form-addbuilder .title-input::before {
+    left: auto;
+    right: -4%;
+    transform: rotate(137deg);
+}
+.job-description>ul>li .point {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+.job-description>ul>li>p {
+    text-align: left;
+}
+.topic .bi {
+    padding-right: 0.5rem;
+    padding-left: 0rem;
+}
+.articles .item .card .card-body>ul>li i {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+.articles .item .card .card-body>ul>li {
+    border-left: 0;
+    border-right: 1px solid var(--lite);
+}
+.articles .item .card .card-body>ul>li:last-child {
+    border-right: 0;
+}
+.contact-us .contact:not(:last-child):after {
+    right: 0;
+    left: auto;
+}
+.city .city-contant img {
+    margin-right: 1.5rem!important;
+    margin-left: 0 !important;
+}
+.dropdown-menu-notifi li a {
+    flex-direction: row-reverse;
+}
+.neighboring .city-name li {
+    padding-left: 1.5rem;
+    padding-right: 0;
+}
+.neighboring .city-name li::before {
+    left: 0;
+    right: auto;
+}
+.part-advertisement .tab-content .slice .owl-carousel .item img {
+    border-radius: 15px 0px 0px 15px; 
+}
+.register-page .background .content {
+
+    left: 0;
+    right: auto;
+    padding: 25vh 50% 0 5%;
+}
+.register-form {
+    right: 5%;
+    left: auto;
+}
+.chosen-rtl .chosen-single div {
+    left: auto;
+    right: 15px;
+}
+.chosen-container-multi .chosen-choices::after {
+    left: auto;
+    right: 20px;
+}
+.form-check .form-check-input {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+.single-item-page .item-details .item-title h4::before {
+    right: auto;
+    left: 0;
+}
+.single-item-page .item-details .article-title>ul>li:not(:last-child) {
+    border-right: 1px solid var(--lite);
+    border-left: 0;
+}
+.single-item-page .item-details .item-title {
+    padding-left: 0;
+    padding-right: 3rem;
+}
+.single-item-page .item-details .article-title>ul>li>i {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.side-other-items .items-container .item img {
+    margin-right: 1rem;
+    margin-left: 0%;
+}
+.side-other-items .items-container h4::before {
+    left: 0;
+    right: auto;
+}
+.single-item-page .comments .comment {
+    direction: ltr;
+}
+.single-item-page .comments .comment .comment-header img {
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+.single-item-page .comments .comment .comment-body {
+    padding-left: 6.5rem;
+    padding-right: 0%;
+}
+#timeline section.year section ul {
+    padding: 0 0px 0 75px;
+}
+#timeline section.year section ul li {
+    margin-right: 0rem;
+    margin-left: 3rem;
+}
+.comment img {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+#timeline div:after {
+    left: 80px;
+    right: auto;
+}
+.comments .bi {
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+#timeline section.year section ul:first-of-type:after {
+    left: 75px;
+    right: auto;
+}
+#timeline section.year section ul li:before {
+    margin-left: -2.75rem;
+}
+.agent-sec ul li {
+    text-align: left;
+}
+
+.offcanvas-start {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 400px;
+    border-right: 1px solid rgba(0,0,0,.2);
+    transform: translateX(100%);
+}
+.offcanvas-start {
+    right: 0;
+    left: auto;
+}
+
+
+@media (max-width:768px) {
+    .single-item-page .comments .comment .comment-header img {
+        margin-right: .5rem;
+    }
+    .single-item-page .comments .comment .comment-body {
+        padding-left: 4rem;
+    }
+    nav .top-nav-notification .sub-menu {
+        right: -7px;
+        min-width: 250px;
+    }
+    .part-advertisement .tab-content .slice .owl-carousel .item img {
+        border-radius: 15px 15px 0px 0px;
+    }
+    .single-item-page .item-details .item-title {
+        padding-right: 0rem;
+    }
+    .policy-list {
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+    .form-partner .search-job {
+        padding: 2rem 0;
+    }
+}
+@media (max-width: 576px){
+    #timeline section.year section ul {
+        padding: 0;
+        margin: 0;
+    }
+    #timeline section.year section ul li {
+        margin: 0;
+    }
+    .single-item-page .item-details .article-title>ul>li {
+        padding: 1px 0.4rem;
+        font-size: 13px;
+    }
+    .single-item-page .item-details .article-title>ul>li>i {
+        margin-right: 5px;
+    }
+    /* ar  */
+    .photo-grid {
+        display: grid;
+        gap: 0.5rem;
+        color: var(--white);
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        grid-auto-rows: 214px;
+    }
+}
