@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="css/profile-style.css">
   </head>
   <body>
-    
+
     <!-- -------- loading ----------- -->
     <div id="loading">
       <div class="loader">
@@ -291,7 +291,7 @@
     </div>
 
     <main class="">
-      <div class="profile">
+      <div class="profile agency">
         <div class="profile-header">
           <div class="profile-header-wrapper">
             <div class="profile-nav-wrapper">
@@ -299,7 +299,7 @@
               <div class="profile-nav">
                 <ul>
                   <li>
-                    <a href="profile.html" class="active">
+                    <a href="profile.html">
                       <i class="bi bi-grid-1x2-fill"></i>
                       <span>لوحة التحكم</span>
                     </a>
@@ -320,6 +320,12 @@
                     <a href="profile-userSetting.html">
                       <i class="bi bi-person-fill"></i>
                       <span>الملف الشخصي</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="profile-agencySetting.html" class="active">
+                      <i class="fa-solid fa-building-ngo"></i>
+                      <span>الملف الشخصي للوكالة</span>
                     </a>
                   </li>
                   <li>
@@ -353,9 +359,10 @@
                 </div>
               </div>
               <div class="tab mx-3">
-                <a href="profile-realState.html" class="link"></a>
-                <i class="bi bi-house-door-fill"></i>
-                عقاراتي
+                <a href="myRealState.html" class="active">
+                  <i class="bi bi-house-door-fill"></i>
+                  عقاراتي
+                </a>
               </div>
               <div class="profile-setting position-relative">
                 <i class="icon bi bi-person-fill" style="z-index: 8;"></i>
@@ -384,36 +391,176 @@
         </div>
         <div class="profile-body">
           <div class="container">
-            <div class="profile-data-wrapper py-4 px-4 border-0">
-              <div class="profile-data-wrapper px-sm-4 py-2 py-sm-5">
-                <div class="d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
-                  <img src="images/alert.svg" alt="" style="width: 60px;margin: 8px 0; margin-left: 20px;">
-                  <div>
-                    <h5 class="fw-semibold">تم إرسال الإعلان ولكن لم يتم نشره</h5>
-                    <p class="pt-2">تم إرسال تفاصيل الممتلكات الخاصة بك ، يرجى شراء شريحة إعلانية لجعلها مرئية للمستخدمين!</p>
+            <div class="profile-data-wrapper p-4">
+              <div class="user-setting">
+                <div class="personal-profile">
+                 <h3>الملف الشخصي للوكالة</h3>
+                </div>
+                <form id="file-upload-form" class="uploader">
+                  <div class="row gy-5">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">اسم الشركة</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="الإسم">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput8" class="form-label">الدولة</label>
+                        <select class="form-control nice-select" name="" id="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput2" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="agency@gmail.com" disabled>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">الموقع</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://www.example.com">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput4" class="form-label">العنوان</label>
+                        <textarea class="form-control m-0" id="exampleFormControlInput4" >
+
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput5" class="form-label">الوصف</label>
+                        <textarea class="form-control m-0" id="exampleFormControlInput5">
+
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="phone" class="form-label">رقم الجوال</label>
+                        <div class="row gx-2">
+                          <div class="col-2">
+                            <input type="text" class="form-control" placeholder="كود">
+                          </div>
+                          <div class="col">
+                            <input type="number" class="form-control" id="phone" placeholder="الرقم">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="" class="form-label">رقم الواتساب</label>
+                        <div class="row gx-2">
+                          <div class="col-2">
+                            <input type="text" class="form-control" id="" placeholder="كود">
+                          </div>
+                          <div class="col">
+                            <input type="number" class="form-control" id="" placeholder="الرقم">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <input id="file-upload" class="upload-img-profile" type="file" name="fileUpload" accept="image/*" />
+                      <label for="file-upload" id="file-drag">
+                        <img id="file-image" src="#" alt="Preview" class="file-image hidden">
+                        <div id="start">
+                          <div>شعار الشركة</div>
+                          <div id="notimage" class="notimage hidden">يرجى أختار صورة</div>
+                          <span id="file-upload-btn" class="btn">تصفح وتحميل</span>
+                        </div>
+                        <div id="response" class="response hidden">
+                          <div id="messages" class="messages"></div>
+                          <progress class="progress" id="file-progress" value="0">
+                            <span>0</span>%
+                          </progress>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          تحديث التفاصيل في جميع قوائم الممتلكات
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="custom-btn mt-3">
+                        <span>حفظ التغييرات</span>
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
-              
-              <div class="profile-data-wrapper py-md-4 px-sm-4 my-4">
-                <h5 class="fw-semibold">فوائد إدراج عقارك على موقعنا</h5>
-                <ul class="easy-way">
-                  <li>
-                    قم بالوصول إلى أكثر من مليون مستخدم نشط على بوابة العقارات رقم 1 في باكستان                  
-                  </li>
-                  <li>
-                    احصل على عملاء متوقعين ذوي جودة عالية وقم ببيع أو تأجير الممتلكات الخاصة بك بشكل أسرع                  
-                  </li>
-                  <li>
-                    أعد استخدام نفس الفتحة لإعلانك العقاري التالي                  
-                  </li>
-                </ul>
-                <div class="d-flex mt-4 mb-3">
-                  <a class="px-4 px-sm-5 button-mint" href="profile-cartProducts.html">اشتري الآن</a>
-                  <a class="px-4 px-sm-5 button-mint-lite" data-bs-toggle="modal" href="#contactUsModal" data-bs-dismiss="modal" role="button" >اتصل الآن</a>
+            </div>
+            <div class="profile-data-wrapper p-4 mt-5">
+              <div class="user-setting">
+                <div class="personal-profile">
+                 <h3>الرئيس التنفيذي / الملف الشخصي للمالك</h3>
                 </div>
+                <form id="file-upload-2-form" class="uploader">
+                  <div class="row gy-5">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">الاسم</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="الإسم">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput2" class="form-label">المنصب</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="أدخل المنصب">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput4" class="form-label">رسالة</label>
+                        <textarea class="form-control m-0" id="exampleFormControlInput4" placeholder="اوصف نفسك بقليل من الكلمات">
+
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <input id="file-upload-2" class="upload-img-profile" type="file" name="fileUpload" accept="image/*" />
+                      <label for="file-upload-2" id="file-drag-2">
+                        <img id="file-image-2" src="#" alt="Preview" class="file-image hidden">
+                        <div id="start-2">
+                          <div>شعار الشركة</div>
+                          <div id="notimage-2" class="notimage hidden">يرجى أختار صورة</div>
+                          <span id="file-upload-2-btn" class="btn">تصفح وتحميل</span>
+                        </div>
+                        <div id="response-2" class="hidden">
+                          <div id="messages-2"></div>
+                          <progress class="progress" id="file-progress-2" value="0">
+                            <span>0</span>%
+                          </progress>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          تحديث التفاصيل في جميع قوائم الممتلكات
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="custom-btn mt-3">
+                        <span>حفظ التغييرات</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <p>معرف إعلانك هو: 42835002. قم بالإشارة إليه أثناء التحدث إلى مندوب المبيعات لدينا</p>
             </div>
           </div>
         </div>
@@ -498,31 +645,6 @@
         </div>
       </div>
     </footer>
-
-        <!-- Modal -->
-        <div class="modal fade custom-modal" id="contactUsModal" aria-hidden="true" aria-labelledby="contactUsModalLabel">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">اتصل بنا</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
-              </div>
-              <div class="modal-body">
-                <ul>
-                  <li>
-                    <span>رقم الهاتف</span>
-                    <a href="">+8568752560</a>
-                  </li>
-                  <li>
-                    <span>رقم الجوال</span>
-                    <a href="">+8568752560</a>
-                  </li>
-                </ul>
-                <p>يرجى ذكر الرقم المرجعي للإعلان ID87499045 عند الاتصال بنا</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>

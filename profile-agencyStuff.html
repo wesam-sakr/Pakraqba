@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="css/profile-style.css">
   </head>
   <body>
-    
+
     <!-- -------- loading ----------- -->
     <div id="loading">
       <div class="loader">
@@ -291,7 +291,7 @@
     </div>
 
     <main class="">
-      <div class="profile">
+      <div class="profile agancy-stuff">
         <div class="profile-header">
           <div class="profile-header-wrapper">
             <div class="profile-nav-wrapper">
@@ -299,7 +299,7 @@
               <div class="profile-nav">
                 <ul>
                   <li>
-                    <a href="profile.html" class="active">
+                    <a href="profile.html">
                       <i class="bi bi-grid-1x2-fill"></i>
                       <span>لوحة التحكم</span>
                     </a>
@@ -314,6 +314,12 @@
                     <a href="profile-realState.html">
                       <i class="bi bi-house-door-fill"></i>
                       <span>عقاراتي</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="profile-agencyStuff.html" class="active">
+                      <i class="bi bi-people-fill"></i>
+                      <span>موظفو الوكالة</span>
                     </a>
                   </li>
                   <li>
@@ -353,9 +359,10 @@
                 </div>
               </div>
               <div class="tab mx-3">
-                <a href="profile-realState.html" class="link"></a>
-                <i class="bi bi-house-door-fill"></i>
-                عقاراتي
+                <a href="myRealState.html" class="active">
+                  <i class="bi bi-house-door-fill"></i>
+                  عقاراتي
+                </a>
               </div>
               <div class="profile-setting position-relative">
                 <i class="icon bi bi-person-fill" style="z-index: 8;"></i>
@@ -382,39 +389,58 @@
             </div>
           </div>
         </div>
-        <div class="profile-body">
+        <div class="profile-body" id="add-project">
           <div class="container">
-            <div class="profile-data-wrapper py-4 px-4 border-0">
-              <div class="profile-data-wrapper px-sm-4 py-2 py-sm-5">
-                <div class="d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
-                  <img src="images/alert.svg" alt="" style="width: 60px;margin: 8px 0; margin-left: 20px;">
-                  <div>
-                    <h5 class="fw-semibold">تم إرسال الإعلان ولكن لم يتم نشره</h5>
-                    <p class="pt-2">تم إرسال تفاصيل الممتلكات الخاصة بك ، يرجى شراء شريحة إعلانية لجعلها مرئية للمستخدمين!</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="profile-data-wrapper py-md-4 px-sm-4 my-4">
-                <h5 class="fw-semibold">فوائد إدراج عقارك على موقعنا</h5>
-                <ul class="easy-way">
-                  <li>
-                    قم بالوصول إلى أكثر من مليون مستخدم نشط على بوابة العقارات رقم 1 في باكستان                  
-                  </li>
-                  <li>
-                    احصل على عملاء متوقعين ذوي جودة عالية وقم ببيع أو تأجير الممتلكات الخاصة بك بشكل أسرع                  
-                  </li>
-                  <li>
-                    أعد استخدام نفس الفتحة لإعلانك العقاري التالي                  
-                  </li>
-                </ul>
-                <div class="d-flex mt-4 mb-3">
-                  <a class="px-4 px-sm-5 button-mint" href="profile-cartProducts.html">اشتري الآن</a>
-                  <a class="px-4 px-sm-5 button-mint-lite" data-bs-toggle="modal" href="#contactUsModal" data-bs-dismiss="modal" role="button" >اتصل الآن</a>
-                </div>
-              </div>
-              <p>معرف إعلانك هو: 42835002. قم بالإشارة إليه أثناء التحدث إلى مندوب المبيعات لدينا</p>
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h4>ادارة المستخدمين</h4>
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#addAgencyUser">
+                <span>إضافة مستخدم وكالة</span>
+              </button>
             </div>
+            <table role="table" class="table table-date table-stuff-date">
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th role="columnheader">الاسم</th>
+                  <th role="columnheader">الرقم</th>
+                  <th role="columnheader">الايميل</th>
+                  <th role="columnheader">حصة باكراقبة</th>
+                  <th role="columnheader">حصة اولكس</th>
+                  <th role="columnheader">التحكم</th>
+                </tr>
+              </thead>
+              <tbody role="rowgroup">
+                <tr role="row">
+                  <td role="cell">منى</td>
+                  <td role="cell">0102435478</td>
+                  <td role="cell">monaali28@gmail.com</td>
+                  <td role="cell">-</td>
+                  <td role="cell">غير معين</td>
+                  <td role="cell">
+                    <button class="controls"  type="button" data-bs-toggle="modal" data-bs-target="#addAgencyUser">
+                      <span><i class="bi bi-pencil-fill"></i></span>
+                    </button>
+                    <button class="controls">
+                      <i class="bi bi-trash-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr role="row">
+                  <td role="cell">منى</td>
+                  <td role="cell">0102435478</td>
+                  <td role="cell">monaali28@gmail.com</td>
+                  <td role="cell">-</td>
+                  <td role="cell">غير معين</td>
+                  <td role="cell">
+                    <button class="controls"  type="button" data-bs-toggle="modal" data-bs-target="#addAgencyUser">
+                      <span><i class="bi bi-pencil-fill"></i></span>
+                    </button>
+                    <button class="controls">
+                      <i class="bi bi-trash-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -499,30 +525,96 @@
       </div>
     </footer>
 
-        <!-- Modal -->
-        <div class="modal fade custom-modal" id="contactUsModal" aria-hidden="true" aria-labelledby="contactUsModalLabel">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">اتصل بنا</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
-              </div>
-              <div class="modal-body">
-                <ul>
-                  <li>
-                    <span>رقم الهاتف</span>
-                    <a href="">+8568752560</a>
-                  </li>
-                  <li>
-                    <span>رقم الجوال</span>
-                    <a href="">+8568752560</a>
-                  </li>
-                </ul>
-                <p>يرجى ذكر الرقم المرجعي للإعلان ID87499045 عند الاتصال بنا</p>
+    <!-- Modal -->
+    <div class="modal fade" id="addAgencyUser" tabindex="-1" aria-labelledby="addAgencyUserLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addAgencyUserLabel">
+              الميزات والمرافق
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="profile-data-wrapper rounded-0 modal-body">
+            <ul class="nav nav-tabs drag" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active m-0" id="package1-tab" data-bs-toggle="tab" data-bs-target="#package1-tab-pane" type="button" role="tab" aria-controls="package1-tab-pane" aria-selected="true">تفاصيل المستخدم</button>
+              </li>
+            </ul>
+            <div class="tab-content p-4" id="myTabContent">
+              <div class="tab-pane fade show active" id="package1-tab-pane" role="tabpanel" aria-labelledby="package1-tab" tabindex="0">
+                <form action="">
+                  <div class="row gy-3">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">اسم الشركة</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="الإسم">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput2" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="agency@gmail.com">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">كلمة السر</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="phone" class="form-label">رقم الجوال</label>
+                        <div class="row gx-2">
+                          <div class="col-2">
+                            <input type="text" class="form-control" placeholder="كود">
+                          </div>
+                          <div class="col">
+                            <input type="number" class="form-control" id="phone" placeholder="الرقم">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="" class="form-label">رقم الواتساب</label>
+                        <div class="row gx-2">
+                          <div class="col-2">
+                            <input type="text" class="form-control" id="" placeholder="كود">
+                          </div>
+                          <div class="col">
+                            <input type="number" class="form-control" id="" placeholder="الرقم">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput4" class="form-label">العنوان</label>
+                        <input class="form-control m-0" id="exampleFormControlInput4" >
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput8" class="form-label">المدينة</label>
+                        <select class="form-control nice-select" name="" id="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+            <button type="button" class="btn btn-success">تأكيد</button>
+          </div>
         </div>
+      </div>
+    </div>
 
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
