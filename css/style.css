@@ -1397,7 +1397,7 @@ i {
 }
 
 .button-mint {
-   padding: 8px 15px;
+   padding: 8px 0px;
    font-size: 18px;
    background-color: var(--mint);
    color: var(--white);
@@ -1409,7 +1409,7 @@ i {
 }
 
 .button-mint-lite {
-   padding: 8px 15px;
+   padding: 8px 0px;
    font-size: 16px;
    background-color: var(--white);
    color: var(--mint);

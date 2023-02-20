@@ -65,11 +65,11 @@
     
     <!-- -------- loading ----------- -->
 
-    <div id="loading">
+    <!-- <div id="loading">
       <div class="loader">
-        <img src="images/Mask Group 2.png" alt="" />
+        <img src="images/icon.png" alt="" />
       </div>
-    </div>
+    </div> -->
 
     <!-- -------- loading ends ----------- -->
 
@@ -613,7 +613,7 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center mb-3">
-                    <a href="">
+                    <a href="singleaqar.html">
                       <h4 class="card-title">700 ريال سعودي</h4>
                     </a>
                     <a href="javascript:void(0);" class="heart fav">
@@ -2181,6 +2181,36 @@
 
     <script>
       $(function() {
+        $(".offered-real-estate .items-container.owl-carousel").owlCarousel({
+    nav: false,
+    loop: false,
+    autoplay: false,
+    autoplayHoverPause: true,
+    responsiveClass: true,
+    margin: 20,
+    rtl: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+  });
+  $(".offered-real-estate .card .owl-carousel").owlCarousel({
+    nav: false,
+    autoplay: false,
+    autoplayHoverPause: false,
+    responsiveClass: true,
+    items: 1,
+    dots: true,
+    rtl: true,
+    mouseDrag: false
+  });
         'use strict';
       
         var body = $('body');

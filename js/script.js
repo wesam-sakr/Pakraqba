@@ -359,14 +359,10 @@ function ImgUpload() {
 
 
 
+// loading
 $(document).ready(function () {
-
-  // loading
-
   $("body").css('overflow-y', 'auto');
   $('#loading').fadeOut(500);
-
-
   // show sub menu
 
   $("nav .has-menu").click(function(){
@@ -618,37 +614,6 @@ makeRequest();
 
 $(function(){
   
-  $(".offered-real-estate .items-container.owl-carousel").owlCarousel({
-    nav: false,
-    loop: false,
-    autoplay: false,
-    autoplayHoverPause: true,
-    responsiveClass: true,
-    margin: 20,
-    rtl: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 3
-        }
-    }
-  });
-
-  $(".offered-real-estate .card .owl-carousel").owlCarousel({
-    nav: false,
-    autoplay: false,
-    autoplayHoverPause: false,
-    responsiveClass: true,
-    items: 1,
-    dots: true,
-    rtl: true,
-    mouseDrag: false
-  });
   
   $(".titanium-agencies .owl-carousel").owlCarousel({
     nav: false,
