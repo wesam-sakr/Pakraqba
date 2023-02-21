@@ -308,10 +308,25 @@
           <h4 class="mb-4">المعلومات الشخصية</h4>
           <div class="row">
             <div class="col-12">
-              <input class="form-control d-none" type="file" name="" id="cv">
+              <div class="file-upload">
+                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">ارفع السيرة الذاتية</button>
+
+                <div class="image-upload-wrap">
+                  <input id="cv" name="resume" class="file-upload-input" type='file' onchange="readURL(this);" accept="pdf/*" />
+                  <div class="drag-text">
+                    <h3>اسحب او ادرج الملفات هنا</h3>
+                  </div>
+                </div>
+                <div class="file-upload-content">
+                  <div class="image-title-wrap">
+                    <button type="button" class="remove-image"><span class="file-title">الملف الذي قمت بتحميلة)</span></button>
+                  </div>
+                </div>
+              </div>
+              <!-- <input class="form-control d-none" type="file" name="" id="cv">
               <label class="w-100 my-3" for="cv">
                 <a role="button" class="custom-btn w-100">ارفع السيره الذاتيه</a>
-              </label>
+              </label> -->
             </div>
             <div class="col-12 col-md-6">
               <div class="form-group mb-3">

@@ -72,6 +72,9 @@ body {
    box-sizing: border-box;
    animation: animloader 1s ease-out infinite alternate;
 }
+.owl-carousel {
+   z-index: 1000;
+}
 
 @keyframes floating {
    0% {
@@ -372,6 +375,8 @@ img {
    background-color: var(--ultra-lite);
    color: var(--mid-dark);
    width: 100%;
+   text-align: right !important;
+   float: none;
 }
 
 .nice-select.open {
@@ -1271,6 +1276,7 @@ section {
 }
 
 .explore-more .item {
+   position: relative;
    display: flex;
    margin-bottom: 3rem;
    align-items: center;
@@ -1278,6 +1284,7 @@ section {
 
 .explore-more .item .img {
    width: 40%;
+   height: 72px;
    background: #15ac8b38;
    border-radius: 10px;
    padding: 10px 22px;
@@ -2033,6 +2040,12 @@ footer .footer-content .social-icons .icon:hover {
    background-color: var(--ultra-lite);
    border-radius: 10px;
    margin-bottom: 2rem;
+   height: 100%;
+}
+.blogs .item a{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    height: 100%;
 }
 
@@ -3355,17 +3368,38 @@ footer .footer-content .social-icons .icon:hover {
    background: #FCFCFC;
    border-radius: 6px;
 }
+.popular-card tr{
+   position: relative;
+}
 
 .popular-card-head {
-   background: #1F375820;
-   border-radius: 6px;
+   padding: 1rem 1rem;
    text-align: center;
-   padding: .7rem 0;
-   font-weight: bold;
+   border-bottom: 0px;
+   color: #000;
+   font-size: 18px;
+   font-weight: 600;
+   background-color: var(--lite);
 }
 
 .popular-card-body {
-   padding: 1rem 2rem;
+   padding: .5rem 1rem;
+   border-top: inherit;
+   border-bottom: inherit;
+   min-height: 220px;
+   max-height: 220px;
+   overflow-y: auto;
+}
+.popular-card-body::-webkit-scrollbar {
+   width: 0.3rem;
+}
+
+.popular-card-body::-webkit-scrollbar-track {
+   background-color: #fff;
+}
+
+.popular-card-body::-webkit-scrollbar-thumb {
+   background-color: var(--sky);
 }
 
 /* trend page */
@@ -3547,6 +3581,68 @@ footer .footer-content .social-icons .icon:hover {
    background-color: var(--mint);
    color: var(--white);
    border-radius: 50%;
+}
+.apply-job .file-upload-btn {
+   width: 100%;
+   margin: 0;
+   color: #fff;
+   background: #15AC8B;
+   border: none;
+   padding: 10px;
+   border-radius: 4px;
+   border-bottom: 4px solid #15824B;
+   transition: all .2s ease;
+   outline: none;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.apply-job .image-upload-wrap {
+   margin-top: 20px;
+   border: 4px dashed #15AC8B;
+   position: relative;
+   margin-bottom: 1rem;
+}
+.apply-job .file-upload-input {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   outline: none;
+   opacity: 0;
+   cursor: pointer;
+}
+.apply-job .drag-text {
+   text-align: center;
+}
+.apply-job .drag-text h3 {
+   font-weight: 100;
+   text-transform: uppercase;
+   color: #15824B;
+   padding: 60px 0;
+}
+.apply-job .file-upload-content {
+   display: none;
+   text-align: center;
+}
+.apply-job .image-title-wrap {
+   padding: 0 15px 15px 15px;
+   color: #222;
+}
+.apply-job .remove-image {
+   width: max-content;
+   margin: 0;
+   color: #fff;
+   background: #cd4535;
+   border: none;
+   padding: 10px;
+   border-radius: 4px;
+   border-bottom: 4px solid #b02818;
+   transition: all .2s ease;
+   outline: none;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin: 20px 0;
 }
 
 a.custom-btn {
@@ -4103,16 +4199,25 @@ a.custom-btn {
 
 .part-advertisement .tab-content .slice {
    position: relative;
-   margin: 20px 0;
-   border: 1px solid var(--lite);
-   border-radius: 15px;
-   color: #676767;
-   font-weight: 500;
+    margin: 20px 0;
+    border: 1px solid var(--lite);
+    border-radius: 15px;
+    color: #676767;
+    font-weight: 500;
+}
+.slice .owl-dots {
+   margin-top: 0;
+   transform: translateY(0%) !important;
+   position: absolute;
+   top: 90%;
+   right: 50%;
+   transform: translateX(40%) !important;
 }
 
 .part-advertisement .tab-content .slice .owl-carousel .item img {
    border-radius: 0 15px 15px 0;
    filter: brightness(0.8);
+   height: 300px !important;
 }
 
 .part-advertisement .tab-content .slice .owl-carousel .owl-stage,
@@ -4176,7 +4281,6 @@ a.custom-btn {
    color: #979797;
    font-size: 16px;
    padding: 50px;
-   margin: 30px 0;
    border-radius: 15px;
 }
 
@@ -4446,8 +4550,7 @@ a.custom-btn {
 }
 
 .form-addbuilder .data-input .nice-select {
-   display: none !important;
-
+   width: 65%;
 }
 
 .form-addbuilder .data-input .contant-input .text-input {
@@ -4738,6 +4841,7 @@ a.link {
    right: 0;
    width: 100%;
    height: 100%;
+   z-index: 9;
 }
 button.link {
    position: absolute;

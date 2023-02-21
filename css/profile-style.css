@@ -99,17 +99,19 @@
     padding: 1rem .8rem;
     z-index: 1000;
 }
-.profile-nav a i{
+.profile-nav a i, .profile-nav a svg{
     padding: 0 .8rem;
 }
 .profile-nav li{
     padding: .5rem 0;
 }
 .profile-nav li a{
+    text-align: center;
     color: #919191 !important;
     font-size: larger;
     display: block;
     margin: .2rem 0;
+
 }
 .profile-nav li a.active{
     color:#15AC8B !important;
@@ -122,13 +124,13 @@
     font-size: 17px;
 }
 .profile-nav li a.active span{
-    font-weight: bold; 
+    font-weight: bold;
 }
-.cartOptions{
+.cartOptions,.projectOptions{
     display: none;
     padding-right: 3.5rem;
 }
-.cartOptions .open{
+.cartOptions .open,.projectOptions .open{
     color: #15AC8B !important;
     font-weight: 500;
 }
@@ -145,8 +147,9 @@
     padding: .5rem 2rem;
     padding-right: 0;
 }
-.profile-header-wrapper .profile-nav-wrapper:hover .profile-nav li , .profile-nav:hover li{
+.profile-header-wrapper .profile-nav-wrapper:hover .profile-nav li a , .profile-nav:hover li a{
     padding-left: 1.2rem;
+    text-align: right;
 }
 .profile-body{
     padding: 2rem 90px;
@@ -174,6 +177,8 @@
 .profile-data-wrapper .easy-way li{
     position: relative;
     padding: .5rem 0;
+    display: inline;
+    margin: 0 0.5rem;
 }
 .profile-data-wrapper .easy-way li::before{
     content: "\f058";
@@ -200,6 +205,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0%;
+    z-index:9;
 }
 .profile-data-wrapper .control a,.profile-data-wrapper .control button{
     display: block;
@@ -214,6 +220,15 @@
 .profile-data-wrapper .control button.delete{
     color: #FF1B00 !important;
 }
+.profile-data-wrapper .part-advertisement .tab-content .slice .link {
+    z-index: 0;
+}
+.profile-data-wrapper .part-advertisement .tab-content .slice .button-mint,
+.profile-data-wrapper .part-advertisement .tab-content .slice .button-mint-lite{
+    position:relative;
+    z-index:5;
+}
+
 .slice .owl-dots {
     margin-top: 0;
     transform: translateY(0%) !important;
@@ -248,7 +263,7 @@
     display: flex;
     align-items: center;
 }
-.package-use-count{  
+.package-use-count{
    text-align: center;
    font-size: large;
 }
@@ -304,6 +319,8 @@
     align-items: flex-start;
 }
 .userSetting-nav .nav-link{
+    width: 100%;
+    text-align: inherit;
     padding: 0.5rem 2.5rem;
     color: #919191;
     font-weight: 500;
@@ -318,34 +335,34 @@
 .uploader #start.hidden {
     display: none;
 }
-.uploader #response {
+.uploader .response {
     float: left;
     clear: both;
     width: 100%;
 }
-.uploader #response.hidden {
+.uploader .response.hidden {
     display: none;
 }
-.uploader #response #messages {
+.uploader .response .messages {
     margin-bottom: 0.5rem;
 }
-.uploader #file-image {
+.uploader .file-image{
     display: inline;
     margin: 0 auto 0.5rem auto;
     width: auto;
     height: auto;
     max-width: 180px;
 }
-.uploader #file-image.hidden {
+.uploader .file-image.hidden {
     display: none;
 }
-.uploader #notimage {
+.uploader .notimage {
     display: block;
     float: left;
     clear: both;
     width: 100%;
 }
-.uploader #notimage.hidden {
+.uploader .notimage.hidden {
     display: none;
 }
 .uploader progress, .uploader .progress {
@@ -425,7 +442,7 @@
     padding: 1rem 0;
 }
 .preferences .form-group{
-    padding: 1rem 0; 
+    padding: 1rem 0;
 }
 .profile .table td{
     width: fit-content;
@@ -435,7 +452,7 @@
     height: 70px;
 }
 .product {
-    width: 100%; 
+    width: 100%;
     align-items:center;
     justify-content:space-between;
     margin: .5rem 0 1rem ;
@@ -503,7 +520,7 @@
     font-weight: 500;
 }
 
- 
+
 
 
 .add-steps{
@@ -619,7 +636,9 @@
     background-color: #15AC8B;
     border-color: #15AC8B;
 }
-#addedPhone, #videos-link{
+#addedPhone, #videos-link, #videos-link2, #videos-link3, #videos-link4,
+#addVideo2,#addVideo3,#addVideo4
+{
     display: none;
 }
 #addPhone input{
@@ -745,10 +764,14 @@
     padding-bottom: 100%;
 }
 
+.profile.agency .nice-select,#addAgencyUser .nice-select{
+    border: 1px solid var(--lite);
+    background-color:var(--white);
+ }
 .modal img{
     filter: invert(.5);
 }
-#addAmenities .modal-dialog{
+#addAmenities .modal-dialog,#addAgencyUser .modal-dialog{
     max-width: 80% !important;
 }
 #addAmenities .profile-data-wrapper{
@@ -787,10 +810,23 @@
 .table-date.table>:not(caption)>*>* {
     padding: 1rem 1.5rem;
 }
-
+.agancy-stuff .controls{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: inherit;
+    font-weight: 500;
+    color: #6d6d6d;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    text-shadow: none;
+}
 @media
-only screen 
-and (max-width: 992px), (min-device-width: 1024px) 
+only screen
+and (max-width: 992px), (min-device-width: 1024px)
 and (max-device-width: 1024px)  {
 
   /* Force table to not be like tables anymore */
@@ -844,6 +880,14 @@ You could also use a data-* attribute and content for this. That way "bloats" th
   .table-date td:nth-of-type(4):before { content: "المنتجات"; }
   .table-date td:nth-of-type(5):before { content: "الإجمالي"; }
   .table-date td:nth-of-type(6):before { content: ""; }
+
+
+  .table-date.table-stuff-date td:nth-of-type(1):before { content: "الاسم"; }
+  .table-date.table-stuff-date td:nth-of-type(2):before { content: "الرقم"; }
+  .table-date.table-stuff-date td:nth-of-type(3):before { content: "الايميل"; }
+  .table-date.table-stuff-date td:nth-of-type(4):before { content: "حصة باكراقبة"; }
+  .table-date.table-stuff-date td:nth-of-type(5):before { content: "حصة اولكس"; }
+  .table-date.table-stuff-date td:nth-of-type(6):before { content: "التحكم"; }
 }
 .table-date .custom-btn {
     width: 120px;
@@ -861,8 +905,6 @@ You could also use a data-* attribute and content for this. That way "bloats" th
     }
     .profile-data-wrapper .part-advertisement .tab-content .slice .owl-carousel .item img {
         border-radius: 15px 15px 0 0;
-    }
-    .profile-data-wrapper .part-advertisement .tab-content .slice .owl-carousel .item img {
         height: 300px !important;
     }
     .section-img {
@@ -871,7 +913,7 @@ You could also use a data-* attribute and content for this. That way "bloats" th
         border-radius: 9px;
     }
     .my-real-state .nav-tabs .nav-item{
-        margin: 0 0 0.5rem .5rem !important; 
+        margin: 0 0 0.5rem .5rem !important;
     }
     .my-real-state .nav-tabs .nav-link {
         padding: 0.5rem 1rem;
@@ -925,3 +967,10 @@ You could also use a data-* attribute and content for this. That way "bloats" th
     }
 }
 
+
+@media (min-width: 768px) {
+   .custom-modal .modal-dialog {
+      max-width: 600px;
+      margin: 0 auto;
+   }
+}

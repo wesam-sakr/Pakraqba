@@ -51,9 +51,10 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/profile-style.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style-ltr.css">
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
   </head>
   <body>
     
@@ -430,14 +431,34 @@
               </select>
             </div>
           </div>
-          <h5 class="title p-3">أضف صورة</h5>
-          <div class="profile-pic position-relative my-5">
+          <h5 class="title p-3">أضف صور</h5>
+          <div class="upload-wrapper mb-4">
+            <div class="upload__box">
+                <div class="upload__btn-box row align-items-center">
+                    <div class="builder-option-name d-flex align-items-center">
+                        <i class="fa-regular fa-image rounded-pill"></i>
+                        <div>
+                            <label class="upload__btn d-inline-block py-3 px-5 mx-3 mb-0">
+                                <span>اضغط لاضافة صور العقار</span>
+                                <input type="file" accept="images/*" name="photo[]"
+                                    multiple="" data-max_length="20"
+                                    class="upload__inputfile">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload__img-wrap">
+
+                </div>
+            </div>
+        </div>
+          <!-- <div class="profile-pic position-relative my-5">
             <img class="" src="./images/icon-1.png" alt="" id="photo" />
             <input type="file" id="file" accept="images/*" />
             <label for="file" id="uploadBtn">
               <div class="profile-pic-icon"></div>
             </label>
-          </div>
+          </div> -->
           <h5 class="title p-3">بيانات التواصل</h5>
          
             <div
