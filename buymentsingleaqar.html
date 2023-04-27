@@ -51,7 +51,6 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css" />
-   <link rel="stylesheet" href="css/profile-style.css">
 
     <!-- custom css file link  -->
     <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
@@ -59,6 +58,7 @@
   <body>
     
     <!-- -------- loading ----------- -->
+
     <!-- <div id="loading">
       <div class="loader">
         <img src="images/Mask Group 2.png" alt="" />
@@ -205,33 +205,11 @@
               </li>
             </ul>
           </div>
-          <ul class="d-flex align-items-center ">
-            <li class="has-menu top-nav-user">
-              <a href="javascript:void(0)">
-                <span><i class="bi bi-plus-lg"></i></span>
-              </a>
-              <div class="sub-menu">
-                <a href="addbuilder.html">إضافة عقار</a>
-                <a href="creatbuilder.html">إنشاء عقار</a>
-                <a href="Requestbuilder.html">طلب عقار</a>
-              </div>
-            </li>
-            <li>
-              <button
-              class="toggle-side-menu"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBackdrop"
-              aria-controls="offcanvasWithBackdrop">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
 
-        
+    
     <div class="offcanvas offcanvas-start side-menu-nav" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
         <button
@@ -287,287 +265,251 @@
               <i class="bi bi-chevron-left" style="width: 8px;"></i>
               <i class="bi bi-chevron-left"></i>
             </div>
-            <h6 class="main-color">اضافة عقار</h6>
+            <h6 class="main-color"></h6>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="form-addbuilder mt-5">
+
+    <section class="single-page">
       <div class="container">
-        <form action="">
-          <h5 class="title p-3">نوع الملكية والموقع</h5>
-          <div
-            class="d-flex align-items-center py-3 pt-5 justify-content-between"
-          >
-            <p class="title-input">الغرض</p>
-            <div class="data-input d-flex">
-              <p class="contant-input">
-                <input type="radio" id="pay" name="purpose" value="pay" />
-                <label for="pay" class="text-input">بيع</label>
-              </p>
-              <p class="contant-input">
-                <input type="radio" id="rent" name="purpose" value="rent" />
-                <label for="rent" class="text-input">إيجار</label>
-              </p>
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <div class="single-contant mt-5">
+              <h3 class="title py-4">منزل في باكستان</h3>
+              <div class="owl-carousel">
+                <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+              </div>
+              <div class="pb-3">
+                <div
+                  class="header d-flex justify-content-between align-items-center p-4"
+                >
+                  <h4 class="title">689 ريال سعودي</h4>
+                  <div class="icon d-flex">
+                    <p class="share-rotate px-2">
+                      <i class="bi bi-reply-fill"></i>
+                    </p>
+                  </div>
+                </div>
+                <p class="p-3">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  الريان، شمال جدة، جدة، المنطقة الغربية
+                </p>
+                <p class="p-3">
+                  <i class="bi bi-building"></i>
+                  شقة
+                </p>
+                <div class="text-flex d-flex p-3">
+                  <p class="ps-2">
+                    <i class="fa-solid fa-bed bi"></i>
+                    3غرف
+                  </p>
+                  <p class="pe-2">
+                    <i class="bi bi-aspect-ratio-fill"></i>
+                    200 متر مربع
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-4 mb-5">
+                <h3 class="text-dark pb-3">معلومات عن العقار</h3>
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <p class="py-3 border-bottom d-flex justify-content-between">
+                      نوع العقار
+                      <span class="pe-lg-4 pe-2"> منزل </span>
+                    </p>
+                    <p class="py-3 border-bottom d-flex justify-content-between">
+                      نوع العرض
+                      <span class="pe-lg-4 pe-2"> للبيع </span>
+                    </p>
+                    <p class="py-3 border-bottom d-flex justify-content-between">
+                      الرقم المرجعي
+                      <span class="pe-lg-4 pe-2"> ID2569865 </span>
+                    </p>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <p class="py-3 border-bottom d-flex justify-content-between">
+                      المساحة
+                      <span class="pe-lg-4 pe-2"> منزل </span>
+                    </p>
+                    <p class="py-3 border-bottom d-flex justify-content-between">
+                      السعر
+                      <span class="pe-lg-4 pe-2"> 4565 </span>
+                    </p>
+                    <p class="py-3 border-bottom d-flex justify-content-between">
+                      عدد الغرف
+                      <span class="pe-lg-4 pe-2"> ID2569865 </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="describtion mb-5">
+                <h3 class="title pb-4">نظام التقسيط</h3>
+                <div class="job-description">
+                  <ul class="m-0">
+                    <li>
+                      <span class="point"></span>
+                      <p>
+                        <span>المقدم</span>
+                        <span>:</span>
+                        <span>10000 <span>ر.س</span></span>
+                      </p>
+                    </li>
+                    <li>
+                      <span class="point"></span>
+                      <p>
+                        <span>مدة التقسيط</span>
+                        <span>:</span>
+                        <span>10 <span>شهور</span></span>
+                      </p>
+                    </li>
+                    <li>
+                      <span class="point"></span>
+                      <p>
+                        <span>مبلغ التقسيط</span>
+                        <span>:</span>
+                        <span>1000 <span>ر.س</span></span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- describtion paragraph -->
+              <div class="describtion mb-5">
+                <h3 class="title pb-3">الوصف</h3>
+                <p>
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن
+                  طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى
+                  المقروء لصفحة المقروء لصفحةهناك حقيقة مثبتة منذ زمن طويل وهي
+                  أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة
+                  مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل
+                  وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء
+                  لصفحةهناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ
+                  زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن
+                  الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                  لصفحةحتوى المقروء لصفحة المقروء لصفحةهناك حقيقة مثبتة منذ زمن
+                  طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك
+                  حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن
+                  طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء
+                  لصفحة
+                </p>
+              </div>
+            </div>
+
+            <div class="single-map">
+              <!-- section map  -->
+              <div class="container">
+                <h3 class="title pb-5">الخريطة في باكستان</h3>
+                <div class="mapouter" style="width: 100%">
+                  <div class="gmap_canvas" style="width: 100%">
+                    <iframe
+                      width="100%"
+                      height="400"
+                      id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=%D8%A8%D8%A7%D9%83%D8%B3%D8%AA%D8%A7%D9%86&t=&z=7&ie=UTF8&iwloc=&output=embed"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      class="rounded-3"
+                    ></iframe
+                    ><a href="https://123movies-to.org">123movies</a><br />
+                    <style>
+                      .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 400px;
+                      }
+                      </style>
+                        <a href="https://www.embedgooglemap.net">google maps widget html</a>
+                      <style>
+                      .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 400px;
+                      }
+                    </style>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <p class="title-input">نوع العقار</p>
-            <div class="data-input d-flex">
-              <p class="contant-input">
-                <input type="radio" id="home" name="typeof" value="home" />
-                <label for="home" class="text-input">بيت</label>
-              </p>
-              <p class="contant-input">
-                <input type="radio" id="peice" name="typeof" value="peice" />
-                <label for="peice" class="text-input">قطعة أرض</label>
-              </p>
-              <p class="contant-input">
-                <input
-                  type="radio"
-                  id="commercial"
-                  name="typeof"
-                  value="commercial"
-                />
-                <label for="commercial" class="text-input"> تجاري</label>
-              </p>
+          <div class="contact-with col-md-4 col-12 px-0 mt-5">
+            <div class="form-contact">
+              <a href="buy.html" class="d-block text-center btn-contact w-100 my-3 py-2">اشتري الان</a>
             </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <label for="city" class="title-input">المدينة</label>
-            <div class="data-input">
-              <select class="nice-select" name="city" id="city">
-                <option value="1">المدينة</option>
-                <option value="2">المدينة</option>
-                <option value="3">المدينة</option>
-                <option value="4">المدينة</option>
-              </select>
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <label for="address" class="title-input">العنوان</label>
-            <div class="data-input">
-              <input
-                type="text"
-                id="address"
-                class="select-input"
-                placeholder="العنوان يكتب هنا"
-              />
-            </div>
-          </div>
-          <h5 class="title p-3">تفاصيل المشروع</h5>
-          <div
-            class="d-flex align-items-center py-3 pt-5 justify-content-between"
-          >
-            <p class="title-input">اسم المشروع</p>
-            <div class="data-input">
-              <input type="text" id="prject" class="select-input" />
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <p class="title-input">الوصف</p>
-            <div class="data-input">
-              <textarea
-                cols="10"
-                type="text"
-                class="select-input"
-              ></textarea>
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <p class="title-input">السعر الشامل كليًا</p>
-            <div class="data-input">
-              <input type="text" class="select-input" />
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <p class="title-input">مساحة الأرض</p>
-            <div class="data-input">
-              <input type="text" id="address" class="select-input" />
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <label for="unit" class="title-input">الوحدة</label>
-            <div class="data-input">
-              <select class="nice-select" name="city" id="unit">
-                <option value="1"></option>
-                <option value="2">المدينة</option>
-                <option value="3">المدينة</option>
-                <option value="4">المدينة</option>
-              </select>
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <label for="bed" class="title-input">غرف نوم</label>
-            <div class="data-input">
-              <select class="nice-select" name="city" id="bes">
-                <option value="1"></option>
-                <option value="2">المدينة</option>
-                <option value="3">المدينة</option>
-                <option value="4">المدينة</option>
-              </select>
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <label for="city" class="title-input">الحمامات</label>
-            <div class="data-input">
-              <select class="nice-select" name="city" id="city">
-                <option value="1"></option>
-                <option value="2">المدينة</option>
-                <option value="3">المدينة</option>
-                <option value="4">المدينة</option>
-              </select>
-            </div>
-          </div>
-          <div class="d-flex align-items-center py-3 justify-content-between">
-            <label for="bath" class="title-input">تنتهي بعد</label>
-            <div class="data-input">
-              <select class="nice-select" name="city" id="bath">
-                <option value="1"></option>
-                <option value="2">المدينة</option>
-                <option value="3">المدينة</option>
-                <option value="4">المدينة</option>
-              </select>
-            </div>
-          </div>
-          <h5 class="title p-3">أضف صور</h5>
-          <div class="upload-wrapper mb-4">
-            <div class="upload__box">
-                <div class="upload__btn-box row align-items-center">
-                    <div class="builder-option-name d-flex align-items-center">
-                        <i class="fa-regular fa-image rounded-pill"></i>
-                        <div>
-                            <label class="upload__btn d-inline-block py-3 px-5 mx-3 mb-0">
-                                <span>اضغط لاضافة صور العقار</span>
-                                <input type="file" accept="images/*" name="photo[]"
-                                    multiple="" data-max_length="20"
-                                    class="upload__inputfile">
-                            </label>
-                        </div>
+            <div class="offered-real-estate d-flex flex-column mx-md-4 mx-0 ">
+              <h4 class="section-title mb-3">عقارات مشابهة</h4>
+              <div class="item mb-4">
+                <div class="card">
+                  <div class="owl-carousel">
+                    <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                    <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                    <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <a href="">
+                        <h4 class="card-title">700 ريال سعودي</h4>
+                      </a>
+                      <a href="javascript:void(0);" class="heart fav">
+                        <i class="bi bi-heart-fill"></i>
+                      </a>
                     </div>
+                    <ul class="mb-3">
+                      <li><i class="bi bi-geo-alt-fill"></i> الريان، شمال جدة، جدة، المنطقة الغربية</li>
+                      <li><i class="bi bi-building"></i> شقة</li>
+                      <li><i class="fa-solid fa-bed"></i> 3 غرف</li>
+                      <li><i class="fa-solid fa-arrows-left-right"></i> 200 متر مربع</li>
+                    </ul>
+                    <div class="d-flex justify-content-center mb-3">
+                      <a class="w-50 button-mint" data-bs-toggle="modal" href="#contactUsModal" data-bs-dismiss="modal" role="button">اتصل الآن</a>
+                      <a class="w-50 button-mint-lite"  data-bs-toggle="modal" href="#contactWithMailModal" data-bs-dismiss="modal" role="button">تواصل عبر الإيميل</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="upload__img-wrap">
-
+              </div>
+              <div class="item mb-4">
+                <div class="card">
+                  <div class="owl-carousel">
+                    <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                    <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                    <img src="images/shutterstock_523424383.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <a href="">
+                        <h4 class="card-title">700 ريال سعودي</h4>
+                      </a>
+                      <a href="javascript:void(0);" class="heart fav">
+                        <i class="bi bi-heart-fill"></i>
+                      </a>
+                    </div>
+                    <ul class="mb-3">
+                      <li><i class="bi bi-geo-alt-fill"></i> الريان، شمال جدة، جدة، المنطقة الغربية</li>
+                      <li><i class="bi bi-building"></i> شقة</li>
+                      <li><i class="fa-solid fa-bed"></i> 3 غرف</li>
+                      <li><i class="fa-solid fa-arrows-left-right"></i> 200 متر مربع</li>
+                    </ul>
+                    <div class="d-flex justify-content-center mb-3">
+                      <a class="w-50 button-mint" data-bs-toggle="modal" href="#contactUsModal" data-bs-dismiss="modal" role="button">اتصل الآن</a>
+                      <a class="w-50 button-mint-lite"  data-bs-toggle="modal" href="#contactWithMailModal" data-bs-dismiss="modal" role="button">تواصل عبر الإيميل</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-          <h5 class="title p-3">بيانات التواصل</h5>
-         
-            <div
-              class="d-flex align-items-center py-3 pt-5 justify-content-between"
-            >
-              <p class="title-input">حالة العضوية</p>
-              <div class="data-input d-flex">
-                <p class="contant-input "style="width:40%">
-                  <input
-                    type="radio"
-                    name="user"
-                    id="op1" 
-                    onclick="myFunction()"                 
-                  />
-
-                  <label  for="op1" class="text-input">  عضو حالي</label>
-                </p>
-                <p class="contant-input "style="width:40%">
-                  <input
-                    type="radio"
-                    name="user"
-                    id="op2"
-                    onclick="myFunction()"
-                  />
-                  <label  for="op2" class="text-input">  عضو جديد (مجاني)</label>
-                </p>
-              </div>
-            </div>
-     
-          <div class="select my-3 rounded">
-            <div class="data-user-old mb-3" id="data-user-old">
-              <div
-                class="d-flex align-items-center py-3 justify-content-between"
-              >
-                <label for="user-name" class="title-input">اسم المستخدم</label>
-                <div class="data-input">
-                  <input
-                    type="text"
-                    id="user-name"
-                    class="select-input"
-                   
-                  />
-                </div>
-              </div>
-              <div
-                class="d-flex align-items-center py-3 justify-content-between"
-              >
-                <label for="city" class="title-input">الرقم السري</label>
-                <div class="data-input">
-                  <input
-                    type="password"
-                    id="password"
-                    class="select-input"
-                  />
-                </div>
-              </div>
-              <button class="mine">قدم الملكية</button>
-            </div>
-            <div class="data-user-new mb-3" id="data-user-new">
-              <div
-                class="d-flex align-items-center py-3 justify-content-between"
-              >
-                <label for="user-name" class="title-input">اسم المستخدم</label>
-                <div class="data-input">
-                  <input
-                    type="text"
-                    id="user-name"
-                    class="select-input"
-                  />
-                </div>
-              </div>
-              <div
-                class="d-flex align-items-center py-3 justify-content-between"
-              >
-                <label for="number" class="title-input"> رقم الجوال</label>
-                <div class="data-input">
-                  <input
-                    type="number"
-                    id="number"
-                    class="select-input"
-                  />
-                </div>
-              </div>
-              <div
-              class="d-flex align-items-center py-3 justify-content-between"
-            >
-              <label for="pass" class="title-input"> الرقم السري</label>
-              <div class="data-input">
-                <input
-                  type="password"
-                  id="pass"
-                  class="select-input"
-                />
-              </div>
-            </div>
-            <div
-            class="d-flex align-items-center py-3 justify-content-between"
-          >
-            <label for="num" class="title-input"> رمز الحمايه </label>
-            <div class="data-input">
-              <input
-                type="num"
-                id="num"
-                class="select-input"
-
-              />
-            </div>
-          </div>
-          <button class="mine">قدم الملكية</button>
-            </div>
-          </div>
-        </form>
       </div>
     </section>
 
-
+    
     <footer>
       <div class="container footer-content">
         <div class="row">

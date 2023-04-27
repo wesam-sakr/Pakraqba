@@ -888,7 +888,7 @@
                             </ul>
                           </div>
                           <div class="upload__img-wrap">
-
+                            <span class="bank d-flex"></span>
                           </div>
                         </div>
                       </div>
@@ -1085,12 +1085,22 @@
             <h1 class="modal-title fs-5" id="imageBankLabel">تحميل من بنك الصور</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body" style="padding:2rem 8rem;">
-            <img src="images/picture.png" alt="">
+          <div class="modal-body">
+            <!-- <img src="images/picture.png" alt="" class="no-img"> -->
+            <ul>
+              <li>
+                <input name="images[]" type="checkbox" id="myCheckbox1" />
+                <label for="myCheckbox1"><img src="images/avatar.png" /></label>
+              </li>
+              <li>
+            
+                <input name="images[]" type="checkbox" id="myCheckbox3" />
+                <label for="myCheckbox3"><img src="images/single.png"/></label>
+              </li>
+            </ul>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
-            <button type="button" class="btn btn-success">تأكيد</button>
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">الغاء</button>
           </div>
         </div>
       </div>

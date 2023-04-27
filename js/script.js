@@ -564,6 +564,21 @@ function ImgUpload() {
     });
 }
 
+$('#imageBank .modal-footer button').click(function(){
+    $('.upload__img-wrap .bank').empty()
+    $('input[name="images[]"]').each(function(){
+        if(this.checked){
+            var imgSrcLable = $(this).next()[0];
+            var checkedImg = $(imgSrcLable).find('img')[0];
+            var imgSrc = $(checkedImg).attr('src')
+            console.log(imgSrc);
+            $('.upload__img-wrap .bank').append("<div class='upload__img-box'><div style='background-image: url(" + imgSrc + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + imgSrc + "' class='img-bg'><div class='upload__img-close'></div></div></div>")
+        }
+    })
+})
+
+
+$('.upload__img-box')
 $(document).ready(function () {
     ImgUpload();
 
@@ -607,6 +622,7 @@ $(document).ready(function () {
         $(".hov-menu").toggleClass("d-flex")
     })
 
+    
 
     // ----- scroll top button ------
 
@@ -848,6 +864,17 @@ $(".offered-real-estate .card .owl-carousel").owlCarousel({
     rtl: dir,
     mouseDrag: false
 });
+$(".single-contant .owl-carousel").owlCarousel({
+    nav: false,
+    autoplay: true,
+    autoplayHoverPause: false,
+    responsiveClass: true,
+    items: 1,
+    dots: true,
+    rtl: dir,
+    mouseDrag: false
+});
+
 $(".titanium-agencies .owl-carousel").owlCarousel({
     nav: false,
     loop: false,

@@ -1343,14 +1343,16 @@ section {
    margin: 0;
 }
 
-.offered-real-estate .item .owl-carousel .owl-dots {
+.offered-real-estate .item .owl-carousel .owl-dots,
+.single-contant .owl-carousel .owl-dots{
    position: absolute;
    bottom: 10px;
    right: 50%;
    transform: translateX(50%);
 }
 
-.offered-real-estate .item .owl-dot {
+.offered-real-estate .item .owl-dot,
+.single-contant .owl-carousel .owl-dot {
    width: 10px;
    height: 10px;
    background-color: #ffffff;
@@ -1359,7 +1361,8 @@ section {
    opacity: 0.5;
 }
 
-.offered-real-estate .item .owl-dot.active {
+.offered-real-estate .item .owl-dot.active,
+.single-contant .owl-carousel .owl-dot.active {
    opacity: 1;
 }
 
@@ -4623,8 +4626,6 @@ a.custom-btn {
 .form-addbuilder .data-user-new {
    display: none;
 }
-
-
 
 .suggested-for-buy-rent .card {
    border: 0;
