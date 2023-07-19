@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gate One Insurance</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Mask Group 2.png" />
+
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-icons.min.css"
+      />
+
+    <!-- font awesom link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- rateyo link -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <!-- chosen link -->
+    <link rel="stylesheet" href="css/chosen.min.css" />
+
+    <!-- intlTelInput link -->
+    <link rel="stylesheet" href="css/intlTelInput.min.css" />
+
+    <!-- WoW link -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- animate link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- custom css file link  -->
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <style>
+.choose-package{
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+.choose-package .bg-maincolor {
+  background-image: -webkit-linear-gradient(left, #15AC8B 0%, #A9CFC7 100%);
+  background-image: linear-gradient(to right, #15AC8B 0%, #A9CFC7 100%);
+}
+
+
+.choose-package .color-main {
+    border-color: #15AC8B !important;
+    color: #15AC8B !important;
+}
+
+.choose-package .list-bordered {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.choose-package .list-bordered li {
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+    padding-top: 14px;
+}
+
+.choose-package .list-bordered li + li {
+    border-top: none;
+}
+
+.choose-package .list-bordered.no-top-border > li:first-child {
+    border-top: none;
+}
+
+.choose-package .list-bordered.no-bottom-border > li:last-child, .choose-package .list-bordered li:last-child{
+    border-bottom: none;
+}
+
+.choose-package .small-text {
+    color: #4c4c4c;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+h5.special-heading {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 575px) {
+    h5.special-heading {
+        font-size: 20px;
+    }
+}
+
+.special-heading {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1;
+    word-wrap: break-word;
+}
+
+.special-heading.text-lowercase {
+    font-size: 62px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+h5.special-heading {
+    letter-spacing: 0.2em;
+    margin: -3px 0 0;
+}
+.special-heading + h1 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #5d5d5d;
+    font-size: 3vw;
+    margin: 20px 0;
+}
+@media (max-width: 575px) {
+    .special-heading + h1 {
+        font-size: 35px;
+    }
+}
+
+.choose-package .btn {
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 2px;
+    width: 180px;
+    line-height: 3.2;
+    color: #fff !important;
+    font-size: 18px;
+}
+.btn-maincolor,
+.btn-maincolor:not(:disabled):not(.disabled):active {
+    background-image: -webkit-linear-gradient(left, #15AC8B 0%, #A9CFC7 100%);
+    background-image: linear-gradient(to right, #15AC8B 0%, #A9CFC7 100%);
+}
+
+
+.btn-outline-maincolor:hover span {
+    background: transparent;
+    color: #fff;
+}
+
+.btn-outline-maincolor span {
+    background-color: #fff;
+}
+
+.btn-outline-maincolor,
+.btn-outline-maincolor:not(:disabled):not(.disabled):active {
+    background-image: -webkit-linear-gradient(left, #15AC8B 0%, #A9CFC7 100%);
+    background-image: linear-gradient(to right, #15AC8B 0%, #A9CFC7 100%);
+    color: #c280bf;
+}
+
+.pricing-plan {
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 40px 40px 10px;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 100%;
+    position: relative;
+}
+
+.pricing-plan .price-wrap {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    font-size: 20px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    line-height: 0.7;
+    margin: 42px 0 3px;
+}
+
+.pricing-plan .price-wrap[class*='bg-'] {
+    margin-bottom: 0;
+    margin-top: 50px;
+    padding: 30px 30px 10px;
+}
+
+.pricing-plan .price-wrap .plan-price {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0 6px;
+}
+
+.pricing-plan [class*='bg-'] {
+    margin-left: -41px;
+    margin-right: -41px;
+    padding: 10px 30px 27px;
+}
+
+.pricing-plan .plan-name[class*='bg-'] {
+    margin-top: -40px;
+    padding-top: 30px;
+}
+
+.pricing-plan .plan-name h3 {
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+    .pricing-plan {
+        padding: 57px 60px 10px;
+    }
+
+    .pricing-plan [class*='bg-'] {
+        margin-left: -61px;
+        margin-right: -61px;
+    }
+
+    .pricing-plan .plan-name[class*='bg-'] {
+        margin-top: -57px;
+    }
+
+    .pricing-plan.plan-featured [class*='bg-'] {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
+}
+
+.pricing-plan .plan-features {
+    margin: 38px 0 0;
+}
+
+.pricing-plan .plan-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.pricing-plan.plan-featured {
+    border: 5px solid #15AC8B;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.pricing-plan.plan-featured .plan-button {
+    top: 48px;
+}
+
+.pricing-plan.rounded .plan-name {
+    border-radius: 5px 5px 0 0;
+}
+
+.plan-desc {
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+    .plan-desc {
+        -webkit-justify-content: space-around !important;
+        justify-content: space-around !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .plan-desc {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .plan-desc {
+        margin: 40px -15px 0;
+    }
+}
+
+.plan-desc h4 {
+    font-weight: 200;
+    letter-spacing: 5px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.plan-desc .price-icon {
+    -webkit-transform: translateX(7%);
+    -ms-transform: translateX(7%);
+    transform: translateX(7%);
+}
+
+.plan-desc p {
+    line-height: 0;
+}
+
+.plan-desc .plan-content {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .plan-desc .plan-content {
+        margin-top: 25px;
+    }
+}
+
+.pricing-plan {
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+@media (min-width: 991px) {
+    .pricing-plan.pricing-plan.mostPopular {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- -------- loading ----------- -->
+
+    <!-- <div id="loading">
+      <div class="loader">
+        <img src="images/Mask Group 2.png" alt="" />
+      </div>
+    </div> -->
+    <!-- -------- loading ends ----------- -->
+
+    <!-- -------- scroll top ----------- -->
+    <a href="javascript:void(0);" id="scroll-top">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <!-- -------- scroll top ends ----------- -->
+
+    <nav>
+      <div class="top-nav">
+        <div class="container-lg d-flex justify-content-between
+          align-items-center">
+          <ul class="hide-from-lg">
+            <li><a href="">عقارات على الخريطة</a></li>
+            <li><a href="maps.html">دليل المناطق</a></li>
+            <li><a href="news.html">الأخبار</a></li>
+            <li><a href="Partners.html">الشركاء</a></li>
+            <li class="has-menu top-nav-more">
+              <a href="javascript:void(0)">المزيد &nbsp;<i class="bi
+                  bi-chevron-down"></i>
+              </a>
+              <div class="sub-menu">
+                <a href="maps.html">الخرائط </a>
+                <a href="blog.html">المنتدى</a>
+                <a href="trends.html">الرائج</a>
+              </div>
+            </li>
+            <li>
+              <div class="input-box">
+                <input type="search" name="" id="" placeholder="كود العقار">
+                <button><i class="bi bi-search"></i></button>
+              </div>
+            </li>
+          </ul>
+          <ul class="">
+            <li>
+              <a href="">English &nbsp;<span><i class="bi bi-globe2"></i></span></a>
+            </li>
+            <li>
+              <a href="">Pakistan &nbsp;<span><i class="bi bi-globe2"></i></span></a>
+            </li>
+            <li class="has-menu top-nav-user">
+              <a href="javascript:void(0);"><span><i class="bi bi-gear-fill"></i></span></a>
+              <div class="sub-menu">
+                <a data-bs-toggle="modal" href="#changeAreaUnitModal"
+                  data-bs-dismiss="modal" role="button">تغيير وحدة المنطقة </a>
+                <a data-bs-toggle="modal" href="#changeCurrencyModal"
+                  data-bs-dismiss="modal" role="button">تغيير العملة</a>
+              </div>
+            </li>
+            <li class="has-menu top-nav-notification">
+              <a href="javascript:void(0);">
+                <span><i class="fa-solid fa-bell"></i></span>
+                <span class="quantity-num">11</span>
+              </a>
+              <div class="sub-menu">
+                <div>
+                  <a href="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
+                    <div>
+                      <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
+                    <div>
+                      <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
+                    <div>
+                      <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
+                    </div>
+                  </a>
+                  <a href="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
+                    <div>
+                      <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
+                    </div>
+                  </a>
+                  <a href="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
+                    <div>
+                      <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
+                    </div>
+                  </a>
+                  <a href="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
+                    <div>
+                      <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="has-menu top-nav-user">
+              <a href="javascript:void(0)">
+                <span><i class="fa-solid fa-user"></i></span>
+              </a>
+              <div class="sub-menu">
+                <a data-bs-toggle="modal" href="#loginModal" role="button">تسجيل
+                  دخول</a>
+                <a href="register.html">إنشاء حساب</a>
+                <a href="profile.html">الملف الشخصي</a>
+                <a href="">تسجيل خروج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-nav">
+        <div class="container-lg d-flex justify-content-between
+          align-items-center">
+          <a href="index.html" class="logo wow animate__animated
+            animate__fadeInRight animate__slow">
+            <img src="images/Group 75050.png" alt="" />
+          </a>
+          <div class="d-flex">
+            <ul
+              class="bottom-nav-links hide-from-lg">
+              <li class="virtical-sub-menu">
+                <a href="javascript:void(0);" class="active">شراء <i class="bi
+                    bi-chevron-left"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="">بيت</a></li>
+                  <li><a href="">قطعة أرض</a></li>
+                  <li><a href="">تجاري</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="egar.html">إيجار</a>
+              </li>
+              <li>
+                <a href="agent.html">وكلاء عقارات</a>
+              </li>
+              <li>
+                <a href="our-projects.html">مشروع جديد</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-start side-menu-nav" tabindex="-1"
+      id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="offcanvas-body large">
+        <ul class="nav-links">
+          <li>
+            <a href="">عقارات على الخريطة</a>
+          </li>
+          <li><a href="maps.html">دليل المناطق</a></li>
+          <li><a href="news.html">الأخبار</a></li>
+          <li><a href="Partners.html">الشركاء</a></li>
+          <li class="has-menu top-nav-more">
+            <a href="javascript:void(0)">المزيد &nbsp;<i class="bi
+                bi-chevron-left"></i></a>
+            <ul class="sub-menu">
+              <li><a href="maps.html">الخرائط </a></li>
+              <li><a href="blog.html">المنتدى</a></li>
+              <li><a href="trends.html">الرائج</a></li>
+            </ul>
+          </li>
+          <li class="has-menu virtical-sub-menu">
+            <a href="javascript:void(0);">شراء &nbsp;<i class="bi
+                bi-chevron-left"></i></a>
+            <ul class="sub-menu">
+              <li><a href="">بيت</a></li>
+              <li><a href="">قطعة أرض</a></li>
+              <li><a href="">تجاري</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="egar.html">إيجار</a>
+          </li>
+          <li>
+            <a href="agent.htmlml">وكلاء عقارات</a>
+          </li>
+          <li>
+            <a href="our-projects.html">مشروع جديد</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="breadcrumb"
+      style="background-image:url(images/breadcrumb.png);">
+      <div class="overlay ">
+        <div class="container h-100">
+          <div class="content h-100 d-flex align-items-center">
+            <a href="index.html" class="text-white"> الرئيسية</a>
+            <div class="px-2 d-flex">
+              <i class="bi bi-chevron-left" style="width: 8px;"></i>
+              <i class="bi bi-chevron-left"></i>
+            </div>
+            <a href="advertise.html" class="text-white">الاعلانات</a>
+            <div class="px-2 d-flex">
+              <i class="bi bi-chevron-left" style="width: 8px;"></i>
+              <i class="bi bi-chevron-left"></i>
+            </div>
+            <h6 class="main-color">اسم الباقة</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4 class="mb-4">
+         تيتانيوم
+      </h4>
+      <p>
+        يمكنك العثور على جميع العملاء في العالم ، ولكن لا يهم إذا كنت لا تستطيع إدارتهم بشكل صحيح. يتميز عميل Titanium بجودة الخدمة التي يقدمها - وهو شيء سنضمن لك دائمًا تقديمه
+      </p>
+      <div class="job-description mb-5">
+        <h5 class="my-4">مميزات باقة تيتانيوم</h5>
+        <ul>
+          <li>
+            <span class="point"></span>
+            <p>هناك حقيقة وهي أن المحتوى المقروء لصفحة تحتوى المقروء لصفحة المقروء لصفحة</p>
+          </li>
+          <li>
+            <span class="point"></span>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك ة</p>
+          </li>
+          <li>
+            <span class="point"></span>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء </p>
+          </li>
+        </ul>
+      </div>
+
+      <table  class="table table-striped table-responsive">
+        <thead>
+          <tr>
+            <th>
+              الباقة
+            </th>
+            <th>
+              تيتانيوم
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              السعر
+            </td>
+            <td>
+              5000/شهر
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Listing
+            </td>
+            <td>
+              500
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Hot Listing
+            </td>
+            <td>
+              400
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Refresh Credits
+            </td>
+            <td>
+              10800
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Listing
+            </td>
+            <td>
+              500
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Hot Listing
+            </td>
+            <td>
+              400
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Refresh Credits
+            </td>
+            <td>
+              10800
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    
+      <button class="custom-btn d-block mt-5 m-auto" type="button" data-bs-toggle="modal" data-bs-target="#adv-pop" >تواصل معنا للاعلان</button>
+    </div>
+
+    
+    <footer>
+      <div class="container footer-content">
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-6">
+            <h4>روابط هامة</h4>
+            <ul>
+              <li>
+                <a href="contact.html">تواصل معنا</a>
+              </li>
+              <li>
+                <a href="advertise.html">الإعلانات</a>
+              </li>
+              <li>
+                <a href="about-us.html">من نحن ؟</a>
+              </li>
+              <li>
+                <a href="policy.html">سياسة الخصوصية</a>
+              </li>
+              <li>
+                <a href="jobs.html">الوظائف</a>
+              </li>
+              <li>
+                <a href="help.html">المساعدة والدعم</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6">
+            <h4>التواصل</h4>
+            <ul>
+              <li>
+                <a href="news.html">الأخبار</a>
+              </li>
+              <li>
+                <a href="agent.html">وكلاء عقارات</a>
+              </li>
+              <li>
+                <a href="articles.html">المقالات</a>
+              </li>
+              <li>
+                <a href="addbuilder.html">إضافة عقار</a>
+              </li>
+              <li>
+                <a href="blog.html">المدونة</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6">
+            <h4>العنوان</h4>
+            <ul class="contact-info">
+              <li><a href=""><i class="bi bi-geo-alt-fill"></i> العنوان يكتب هنا</a></li>
+              <li><a href=""><i class="bi bi-telephone-fill"></i> +9568563325</a></li>
+              <li><a href=""><i class="bi bi-envelope-fill"></i> Mail@gmail.com</a></li>
+              <li class="social-icons">
+                <a href="" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="" class="icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <div class="container">
+          <h6>جميع الحقوق حفوظة لموقع سمارت فيجن</h6>
+          <img src="images/Group 75462.png" alt="">
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Modal -->
+    <div class="blog">
+      <div class="modal fade" id="adv-pop" aria-hidden="true" aria-labelledby="adv-popLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">تواصل الان للعلان</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label class="py-2" for="">الاسم *</label>
+                  <input class="form-control" type="text" name="" id="" required>
+                </div>  
+                <div class="form-group">
+                  <label class="py-2" for="">البريد الالكتروني *</label>
+                  <input class="form-control" type="email" name="" id="" required>
+                </div>  
+                <div class="form-group">
+                  <label class="py-2" for="">رقم الجوال *</label>
+                  <input class="form-control" type="text" name="" id="" required>
+                </div>                  
+                <div class="form-group">
+                  <label class="py-2" for="">الفئة *</label>
+                  <input class="form-control" type="text" name="" id="" placeholder="تيتانيوم بلس" required>
+                </div>  
+                <div class="form-group">
+                  <label class="py-2" for="">نص الرسالة *</label>
+                  <textarea class="form-control" rows="6" placeholder="اكتب هنا" required></textarea>
+                </div> 
+                <div class="form-group">
+                  <label class="py-2" for="">كود التاكيد *</label>
+                  <input class="form-control" type="ىعةلاثق" name="" id="" required>
+                </div> 
+              </form>
+            </div>
+            <div class="w-100">
+              <button type="submit" class="custom-btn w-100" data-bs-target="#adv-popSuccess" data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close">ارسال</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="adv-popSuccess" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>تم ارسال الاعلان للمراجعه وسيتم التواصل معك بمجرد الموافقه عليه</p>
+              <img src="images/Ok-amico.png"  height="380px" alt="">
+            </div>
+            <div class="text-center">
+              <button type="button" class="custom-btn" data-bs-dismiss="modal" aria-label="Close">تم</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade custom-modal" id="contactUsModal" aria-hidden="true"
+      aria-labelledby="contactUsModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">اتصل بنا</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                <span>رقم الهاتف</span>
+                <a href="">+8568752560</a>
+              </li>
+              <li>
+                <span>رقم الجوال</span>
+                <a href="">+8568752560</a>
+              </li>
+            </ul>
+            <p>يرجى ذكر الرقم المرجعي للإعلان ID87499045 عند الاتصال بنا</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="contactWithMailModal"
+      aria-hidden="true" aria-labelledby="contactWithMailModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">تواصل عبر الإيميل</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-3 mt-3 d-flex flex-column">
+                <label for="" class="form-label">الإسم</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-12 mb-3 mt-3 d-flex flex-column">
+                <label for="" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="col-12 mb-3 mt-3 d-flex flex-column">
+                <label for="" class="form-label">رقم الجوال</label>
+                <input type="tel" class="form-control">
+              </div>
+              <div class="col-12 mb-3 mt-3 d-flex flex-column">
+                <label for="" class="form-label">نص الرسالة</label>
+                <textarea type="text" class="form-control"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">إرسال</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="changeAreaUnitModal"
+      aria-hidden="true" aria-labelledby="changeAreaUnitModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">تغيير وحدة المنطقة</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-5 mt-3 d-flex flex-column">
+                <select class="nice-select">
+                  <option value="1" selected>المتر المربع</option>
+                  <option value="2">المتر المربع</option>
+                  <option value="3">المتر المربع</option>
+                  <option value="4">المتر المربع</option>
+                  <option value="5">المتر المربع</option>
+                  <option value="6">المتر المربع</option>
+                  <option value="7">المتر المربع</option>
+                  <option value="8">المتر المربع</option>
+                  <option value="9">المتر المربع</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">حفظ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="changeCurrencyModal"
+      aria-hidden="true" aria-labelledby="changeCurrencyModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">تغيير العملة</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-5 mt-3 d-flex flex-column">
+                <select class="nice-select">
+                  <option value="1" selected>الريال السعودي</option>
+                  <option value="2">الريال السعودي</option>
+                  <option value="3">الريال السعودي</option>
+                  <option value="4">الريال السعودي</option>
+                  <option value="5">الريال السعودي</option>
+                  <option value="6">الريال السعودي</option>
+                  <option value="7">الريال السعودي</option>
+                  <option value="8">الريال السعودي</option>
+                  <option value="9">الريال السعودي</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">حفظ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="loginModal" aria-hidden="true"
+      aria-labelledby="loginModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">تسجيل دخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <button class="log-by-facebook"><i class="fa-brands
+                    fa-facebook-f"></i> &nbsp;&nbsp; تسجيل دخول بواسطة فيسبوك</button>
+              </div>
+              <div class="col-12 mb-4">
+                <button class="log-by-google"><img src="images/1534129544.png">&nbsp;&nbsp;
+                  تسجيل دخول بواسطة جوجل</button>
+              </div>
+              <div class="col-12 mb-4 text-center">
+                <h5>او</h5>
+              </div>
+              <div class="col-12 mb-4">
+                <label class="form-label">رقم الجوال</label>
+                <input type="tel" class="form-control" id="" placeholder="">
+              </div>
+              <div class="col-12 mb-4">
+                <label class="form-label">الرقم السري</label>
+                <input type="password" class="form-control" id=""
+                  placeholder="">
+              </div>
+              <div class="col-12 mb-2">
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">دخول</button>
+              </div>
+              <div class="col-12 mb-4 d-flex justify-content-between">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value=""
+                    id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    تذكرني
+                  </label>
+                </div>
+                <a data-bs-toggle="modal" href="#forgetPasswordModal"
+                  data-bs-dismiss="modal" role="button">نسيت كلمة المرور</a>
+              </div>
+              <div class="col-12 text-center">
+                <p>هل لديك حساب ؟ &nbsp; <a href="register.html">إنشاء حساب جديد</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="forgetPasswordModal"
+      aria-hidden="true" aria-labelledby="forgetPasswordModalLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">نسيت كلمة السر؟</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <button class="log-by-facebook"><i class="fa-brands
+                    fa-facebook-f"></i> &nbsp;&nbsp; تسجيل دخول بواسطة فيسبوك</button>
+              </div>
+              <div class="col-12 mb-4">
+                <button class="log-by-google"><img src="images/1534129544.png">&nbsp;&nbsp;
+                  تسجيل دخول بواسطة جوجل</button>
+              </div>
+              <div class="col-12 mb-4 text-center">
+                <h5>او</h5>
+              </div>
+              <div class="col-12 mb-4">
+                <label class="form-label">رقم الجوال</label>
+                <input type="tel" class="form-control" id="" placeholder="">
+              </div>
+              <div class="col-12 mb-2">
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-toggle="modal" data-bs-target="#vireficationCodeModal"
+                  data-bs-dismiss="modal" role="button">استمرار</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade custom-modal" id="vireficationCodeModal"
+      aria-hidden="true" aria-labelledby="vireficationCodeModalLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">كود التأكيد</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <h4>تم إرسال كود التأكيد على جوالك</h4>
+            <form class="vir-form d-flex">
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+            </form>
+            <button class="button-mint w-100 py-3 m-0" data-bs-toggle="modal"
+              data-bs-target="#setNewPasswordModal" data-bs-dismiss="modal"
+              role="button">استمرار</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="setNewPasswordModal"
+      aria-hidden="true" aria-labelledby="setNewPasswordModalLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">نسيت كلمة السر؟</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <label class="form-label">كلمة المرور</label>
+                <input type="password" class="form-control" id=""
+                  placeholder="">
+              </div>
+              <div class="col-12 mb-4">
+                <label class="form-label">تأكيد كلمة المرور</label>
+                <input type="password" class="form-control" id=""
+                  placeholder="">
+              </div>
+              <div class="col-12 mb-2">
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">استمرار</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- popper script -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- font awesom script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
+    <!-- rateyo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <!-- nice select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- <script>$(".nice-select").niceSelect();</script> -->
+
+    <!-- chosen script -->
+    <script src="js/chosen.jquery.min.js"></script>
+    <!-- <script>$(".chosen-select").chosen({rtl: true});</script> -->
+
+    <!-- intlTelInput script -->
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="intl-tel-input-master/build/js/utils.js"></script>
+
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script>
+      $(function() {
+        'use strict';
+      
+        var body = $('body');
+      
+        function goToNextInput(e) {
+          var key = e.which,
+            t = $(e.target),
+            sib = t.next('input');
+      
+          if (key != 9 && (key < 48 || key > 57)) {
+            e.preventDefault();
+            return false;
+          }
+      
+          if (key === 9) {
+            return true;
+          }
+      
+          if (!sib || !sib.length) {
+            sib = body.find('.vir-input').eq(0);
+          }
+          sib.select().focus();
+        }
+      
+        function onKeyDown(e) {
+          var key = e.which;
+      
+          if (key === 9 || (key >= 48 && key <= 57)) {
+            return true;
+          }
+      
+          e.preventDefault();
+          return false;
+        }
+        
+        function onFocus(e) {
+          $(e.target).select();
+        }
+      
+        body.on('keyup', 'input', goToNextInput);
+        body.on('keydown', 'input', onKeyDown);
+        body.on('click', 'input', onFocus);
+
+        
+      })
+    </script>
+  </body>
+</html>

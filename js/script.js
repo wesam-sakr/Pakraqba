@@ -617,6 +617,10 @@ $(document).ready(function () {
         $(this).toggleClass("fav");
         console.log(this)
     })
+    $(".compare").click(function() {
+        $(this).toggleClass("check");
+        console.log(this)
+    })
 
     $("nav .hav-user").click(function () {
         $(".hov-menu").toggleClass("d-flex")
@@ -830,7 +834,9 @@ $(document).ready(function () {
 // $(".nice-select").niceSelect();
 // $(".chosen-select").chosen({rtl: true});
 
-    $(".register-as").select2();
+
+    // stop untill timer work
+    // $(".register-as").select2(); 
 
 });
 

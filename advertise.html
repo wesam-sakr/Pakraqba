@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+      href="css/bootstrap-icons.min.css"
       />
 
     <!-- font awesom link  -->
@@ -24,39 +24,354 @@
       referrerpolicy="no-referrer"
       />
 
-   <!-- owl-carousel link -->
-   <link rel="stylesheet" href="css/owl.carousel.min.css" />
-   <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-   <!-- rateyo link -->
-   <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+    <!-- rateyo link -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
 
-   <!-- nice select link -->
-   <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css" />
 
-       <!-- chosen link -->
-   <link rel="stylesheet" href="css/chosen.min.css" />
+    <!-- chosen link -->
+    <link rel="stylesheet" href="css/chosen.min.css" />
 
-   <!-- intlTelInput link -->
-   <link rel="stylesheet" href="css/intlTelInput.min.css" />
+    <!-- intlTelInput link -->
+    <link rel="stylesheet" href="css/intlTelInput.min.css" />
 
-   <!-- WoW link -->
-   <link rel="stylesheet" href="css/animate.css" />
+    <!-- WoW link -->
+    <link rel="stylesheet" href="css/animate.css" />
 
-   <!-- animate link -->
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <!-- animate link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- custom css file link  -->
     <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <style>
+      .choose-package{
+        margin-top: 20px;
+        margin-bottom: 200px;
+      }
+      .choose-package .bg-maincolor {
+        background-image: -webkit-linear-gradient(left, #15AC8B 0%, #A9CFC7 100%);
+        background-image: linear-gradient(to right, #15AC8B 0%, #A9CFC7 100%);
+      }
+
+
+      .choose-package .color-main {
+          border-color: #15AC8B !important;
+          color: #15AC8B !important;
+      }
+
+      .choose-package .list-bordered {
+          list-style: none;
+          overflow: hidden;
+          padding: 0;
+          width: fit-content;
+          margin: auto;
+      }
+
+      .choose-package .list-bordered li {
+          padding-bottom: 5px;
+          padding-top: 4px;
+          position: relative;
+          text-align: start;
+          padding-right: 1.5rem;
+      }
+      .choose-package .list-bordered li::before{
+        position: absolute;
+        content : "";
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background: var(--mint);
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 6px;
+      }
+
+      .choose-package .list-bordered li + li {
+          border-top: none;
+      }
+
+      .choose-package .list-bordered.no-top-border > li:first-child {
+          border-top: none;
+      }
+
+      .choose-package .list-bordered.no-bottom-border > li:last-child, .choose-package .list-bordered li:last-child{
+          border-bottom: none;
+      }
+
+      .choose-package .small-text {
+          color: #4c4c4c;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+      }
+      h5.special-heading {
+          font-size: 20px;
+          font-weight: 200;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+      }
+
+      @media (max-width: 575px) {
+          h5.special-heading {
+              font-size: 20px;
+          }
+      }
+
+      .special-heading {
+          font-size: 30px;
+          font-weight: 900;
+          line-height: 1;
+          word-wrap: break-word;
+      }
+
+      .special-heading.text-lowercase {
+          font-size: 62px;
+          font-weight: 300;
+          line-height: 1.1;
+          margin-bottom: 0;
+      }
+      h5.special-heading {
+          letter-spacing: 0.2em;
+          margin: -3px 0 0;
+      }
+      .special-heading + h1 {
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: #5d5d5d;
+          font-size: 3vw;
+          margin: 20px 0;
+      }
+      @media (max-width: 575px) {
+          .special-heading + h1 {
+              font-size: 35px;
+          }
+      }
+
+      .choose-package .btn {
+        border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 46px;
+    padding: 2px;
+    width: 100%;
+    line-height: 1.2;
+    color: #fff !important;
+    font-size: 18px;
+      }
+      .btn-maincolor,
+      .btn-maincolor:not(:disabled):not(.disabled):active {
+          background-image: -webkit-linear-gradient(left, #15AC8B 0%, #A9CFC7 100%);
+          background-image: linear-gradient(to right, #15AC8B 0%, #A9CFC7 100%);
+      }
+
+
+      .btn-outline-maincolor:hover span {
+          background: transparent;
+          color: #fff;
+      }
+
+      .btn-outline-maincolor span {
+          background-color: #fff;
+      }
+
+      .btn-outline-maincolor,
+      .btn-outline-maincolor:not(:disabled):not(.disabled):active {
+          background-image: -webkit-linear-gradient(left, #15AC8B 0%, #A9CFC7 100%);
+          background-image: linear-gradient(to right, #15AC8B 0%, #A9CFC7 100%);
+          color: #c280bf;
+      }
+
+      .pricing-plan {
+          box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.05);
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding: 40px 40px 10px;
+          text-align: center;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          height: 100%;
+          position: relative;
+      }
+
+      .pricing-plan .price-wrap {
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-box-align: center;
+          -webkit-box-pack: center;
+          font-size: 20px;
+          -webkit-justify-content: center;
+          justify-content: center;
+          line-height: 0.7;
+          margin: 30px 0 3px;
+      }
+
+      .pricing-plan .price-wrap[class*='bg-'] {
+          margin-bottom: 0;
+          margin-top: 50px;
+          padding: 30px 10px 10px;
+      }
+
+      .pricing-plan .price-wrap .plan-price {
+          font-size: 30px;
+          font-weight: 700;
+          padding: 0 6px;
+      }
+
+      .pricing-plan [class*='bg-'] {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding: 10px 30px 27px;
+      }
+
+      .pricing-plan .plan-name[class*='bg-'] {
+          margin-top: -20px;
+          padding-top: 20px;
+      }
+
+      .pricing-plan .plan-name h3 {
+          font-size: 24px;
+          letter-spacing: 0.2em;
+          line-height: 1;
+          color: #ffffff;
+      }
+
+      @media (min-width: 1200px) {
+          .pricing-plan {
+              padding: 57px 20px 10px;
+          }
+          .pricing-plan .plan-name[class*='bg-'] {
+              margin-top: -57px;
+          }
+
+          .pricing-plan.plan-featured [class*='bg-'] {
+              margin-left: -60px;
+              margin-right: -60px;
+          }
+      }
+
+      .pricing-plan .plan-features {
+          margin: 25px 0 0;
+      }
+
+      .pricing-plan .plan-button {
+          position: absolute;
+          bottom: 1rem;
+          left: 50%;
+          width: 75%;
+          transform: translate(-50%, 50%);
+      }
+      .individual .pricing-plan .plan-button {
+          bottom: 0rem;
+      }
+      .individual.choose-package .btn {
+        line-height: 2.2;
+      }
+
+      .pricing-plan.plan-featured {
+          border: 5px solid #15AC8B;
+          -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+      }
+
+      .pricing-plan.plan-featured .plan-button {
+          top: 48px;
+      }
+
+      .pricing-plan.rounded .plan-name {
+          border-radius: 5px 5px 0 0;
+      }
+
+      .plan-desc {
+          -webkit-box-pack: justify;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: center;
+          justify-content: center;
+          margin-top: 30px;
+      }
+
+      @media (max-width: 767px) {
+          .plan-desc {
+              -webkit-justify-content: space-around !important;
+              justify-content: space-around !important;
+          }
+      }
+
+      @media (max-width: 991px) {
+          .plan-desc {
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+          }
+      }
+
+      @media (min-width: 991px) and (max-width: 1200px) {
+          .plan-desc {
+              margin: 40px -15px 0;
+          }
+      }
+
+      .plan-desc h4 {
+          font-weight: 200;
+          letter-spacing: 5px;
+          line-height: 1.3;
+          margin: 0;
+      }
+
+      .plan-desc .price-icon {
+          -webkit-transform: translateX(7%);
+          -ms-transform: translateX(7%);
+          transform: translateX(7%);
+      }
+
+      .plan-desc p {
+          line-height: 0;
+      }
+
+      .plan-desc .plan-content {
+          margin-top: 10px;
+      }
+      .more-details{
+        font-weight: 500;
+        color: var(--mint) !important;
+        display: block;
+        margin-bottom: .5rem;
+      }
+
+      @media (min-width: 991px) {
+    .pricing-plan.pricing-plan.mostPopular {
+        background: #15AC8B30;
+    }
+}
+      @media (max-width: 767px) {
+          .plan-desc .plan-content {
+              margin-top: 25px;
+          }
+      }
+
+      .pricing-plan {
+          box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.1);
+          background: #ffffff;
+      }
+
+    </style>
   </head>
   <body>
-    
+
     <!-- -------- loading ----------- -->
 
     <!-- <div id="loading">
@@ -64,7 +379,6 @@
         <img src="images/Mask Group 2.png" alt="" />
       </div>
     </div> -->
-
     <!-- -------- loading ends ----------- -->
 
     <!-- -------- scroll top ----------- -->
@@ -75,14 +389,16 @@
 
     <nav>
       <div class="top-nav">
-        <div class="container-lg d-flex justify-content-between align-items-center">
+        <div class="container-lg d-flex justify-content-between
+          align-items-center">
           <ul class="hide-from-lg">
             <li><a href="">عقارات على الخريطة</a></li>
             <li><a href="maps.html">دليل المناطق</a></li>
             <li><a href="news.html">الأخبار</a></li>
             <li><a href="Partners.html">الشركاء</a></li>
             <li class="has-menu top-nav-more">
-              <a href="javascript:void(0)">المزيد &nbsp;<i class="bi bi-chevron-down"></i>
+              <a href="javascript:void(0)">المزيد &nbsp;<i class="bi
+                  bi-chevron-down"></i>
               </a>
               <div class="sub-menu">
                 <a href="maps.html">الخرائط </a>
@@ -107,8 +423,10 @@
             <li class="has-menu top-nav-user">
               <a href="javascript:void(0);"><span><i class="bi bi-gear-fill"></i></span></a>
               <div class="sub-menu">
-                <a data-bs-toggle="modal" href="#changeAreaUnitModal" data-bs-dismiss="modal" role="button">تغيير وحدة المنطقة </a>
-                <a data-bs-toggle="modal" href="#changeCurrencyModal" data-bs-dismiss="modal" role="button">تغيير العملة</a>
+                <a data-bs-toggle="modal" href="#changeAreaUnitModal"
+                  data-bs-dismiss="modal" role="button">تغيير وحدة المنطقة </a>
+                <a data-bs-toggle="modal" href="#changeCurrencyModal"
+                  data-bs-dismiss="modal" role="button">تغيير العملة</a>
               </div>
             </li>
             <li class="has-menu top-nav-notification">
@@ -119,45 +437,75 @@
               <div class="sub-menu">
                 <div>
                   <a href="">
-                    <img src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png" alt="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
                     <div>
                       <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
-                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</span>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
                     </div>
                   </a>
                   <a href="#">
-                    <img src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png" alt="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
                     <div>
                       <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
-                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</span>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
                     </div>
                   </a>
                   <a href="#">
-                    <img src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png" alt="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
                     <div>
                       <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
-                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</span>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
                     </div>
                   </a>
                   <a href="">
-                    <img src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png" alt="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
                     <div>
                       <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
-                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</span>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
                     </div>
                   </a>
                   <a href="">
-                    <img src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png" alt="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
                     <div>
                       <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
-                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</span>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
                     </div>
                   </a>
                   <a href="">
-                    <img src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png" alt="">
+                    <img
+                      src="images/real-estate-company-logo-8EE3097111-seeklogo.com.png"
+                      alt="">
                     <div>
                       <h6>لقد تم قبول منشورك من قبل الأدمن</h6>
-                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير</span>
+                      <span>وعند موافقه العميل المبدئيه على التصميم يتم ازالة
+                        هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                        للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد
+                        تشغل المشاهد عن وضع الكثير</span>
                     </div>
                   </a>
                 </div>
@@ -169,7 +517,8 @@
                 <span><i class="fa-solid fa-user"></i></span>
               </a>
               <div class="sub-menu">
-                <a data-bs-toggle="modal" href="#loginModal" role="button">تسجيل دخول</a>
+                <a data-bs-toggle="modal" href="#loginModal" role="button">تسجيل
+                  دخول</a>
                 <a href="register.html">إنشاء حساب</a>
                 <a href="profile.html">الملف الشخصي</a>
                 <a href="">تسجيل خروج</a>
@@ -179,15 +528,18 @@
         </div>
       </div>
       <div class="bottom-nav">
-        <div class="container-lg d-flex justify-content-between align-items-center">
-          <a href="index.html" class="logo wow animate__animated animate__fadeInRight animate__slow">
+        <div class="container-lg d-flex justify-content-between
+          align-items-center">
+          <a href="index.html" class="logo wow animate__animated
+            animate__fadeInRight animate__slow">
             <img src="images/Group 75050.png" alt="" />
           </a>
           <div class="d-flex">
             <ul
               class="bottom-nav-links hide-from-lg">
               <li class="virtical-sub-menu">
-                <a href="javascript:void(0);" class="active">شراء <i class="bi bi-chevron-left"></i></a>
+                <a href="javascript:void(0);" class="active">شراء <i class="bi
+                    bi-chevron-left"></i></a>
                 <ul class="sub-menu">
                   <li><a href="">بيت</a></li>
                   <li><a href="">قطعة أرض</a></li>
@@ -209,8 +561,9 @@
       </div>
     </nav>
 
-        
-    <div class="offcanvas offcanvas-start side-menu-nav" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+
+    <div class="offcanvas offcanvas-start side-menu-nav" tabindex="-1"
+      id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
         <button
           type="button"
@@ -227,7 +580,8 @@
           <li><a href="news.html">الأخبار</a></li>
           <li><a href="Partners.html">الشركاء</a></li>
           <li class="has-menu top-nav-more">
-            <a href="javascript:void(0)">المزيد &nbsp;<i class="bi bi-chevron-left"></i></a>
+            <a href="javascript:void(0)">المزيد &nbsp;<i class="bi
+                bi-chevron-left"></i></a>
             <ul class="sub-menu">
               <li><a href="maps.html">الخرائط </a></li>
               <li><a href="blog.html">المنتدى</a></li>
@@ -235,7 +589,8 @@
             </ul>
           </li>
           <li class="has-menu virtical-sub-menu">
-            <a href="javascript:void(0);">شراء &nbsp;<i class="bi bi-chevron-left"></i></a>
+            <a href="javascript:void(0);">شراء &nbsp;<i class="bi
+                bi-chevron-left"></i></a>
             <ul class="sub-menu">
               <li><a href="">بيت</a></li>
               <li><a href="">قطعة أرض</a></li>
@@ -257,7 +612,8 @@
     </div>
 
 
-    <div class="breadcrumb" style="background-image:url(images/breadcrumb.png);">
+    <div class="breadcrumb"
+      style="background-image:url(images/breadcrumb.png);">
       <div class="overlay ">
         <div class="container h-100">
           <div class="content h-100 d-flex align-items-center">
@@ -273,146 +629,302 @@
     </div>
 
     <div class="container">
-      <div class="row my-5">
-        <div class="col-12 mb-5 d-flex">
-          <h6>
-            <i class="fa-solid fa-headset px-1"></i>
-            الاعلانات</h6>
-        </div>
-        <div class="col-lg-8">
-          <div class="job-description rounded bg-light p-4 mb-5">
-            <h5 class="m-4">لمحة عن موقعنا</h5>
-            <ul>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-
-              
-            </ul>
-          </div>
-
-          <div class="job-description rounded bg-light p-4 mb-5">
-            <h5 class="m-4">لماذا تعلن على موقعنا</h5>
-            <ul>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-              <li>
-                <span class="point"></span>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
-              </li>
-
-              
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="p-4 rounded bg-light">
-            <h5 class="text-center mb-5" style="color: var(--main-color);">
-              <i class="fa-solid fa-headset px-2"></i>
-              الاعلانات</h5>
-            <div class="accordion package" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading1">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                    الباقات
-                  </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <a href="single-adv.html" class="link"></a>
-                        باقة التيتانيوم
-                      </li>
-                      <li>
-                        <a href="single-adv.html" class="link"></a>
-                        باقة التيتانيوم
-                      </li>
-                    </ul>
-                  </div>
+      <h6>
+        <i class="fa-solid fa-headset px-1"></i>
+        الاعلانات
+      </h6>
+      <section class="choose-package individual">
+        <div class="container">
+          <h5>الباقات الفردية</h5>
+          <div class="row gy-5 c-gutter-60">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="pricing-plan mb-0 p-4 rounded">
+                <div class="plan-desc m-0">
+                  <h3>
+                    <img src="images/startup.png" alt=""style="width:30px">
+                    استماع
+                  </h3>
+                </div>
+                <div class="price-wrap mt-3 d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">8,440</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features mt-3">
+                  <ul class="list-bordered">
+                    <li>احصل على فتحة إعلانية لمدة 30 يومًا لنشر ممتلكاتك على باكرقبه</li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="profile-cartProducts.html" class="btn btn-maincolor"><span>Inquire now</span></a>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    شركة العقارية للسياحة
-                  </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <a href="single-adv.html" class="link"></a>
-                        باقة التيتانيوم
-                      </li>
-                      <li>
-                        <a href="single-adv.html" class="link"></a>
-                        باقة التيتانيوم
-                      </li>
-                    </ul>
-                  </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="pricing-plan mb-0 p-4 rounded">
+                <div class="plan-desc m-0">
+                  <h3>
+                    <img src="images/startup.png" alt=""style="width:30px">
+                    استماع
+                  </h3>
+                </div>
+                <div class="price-wrap mt-3 d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">8,440</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features mt-3">
+                  احصل على فتحة إعلانية لمدة 30 يومًا لنشر ممتلكاتك على باكرقبه
+                </div>
+                <div class="plan-button">
+                  <a href="profile-cartProducts.html" class="btn btn-maincolor"><span>Inquire now</span></a>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    لافتة إعلانية
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="pricing-plan mb-0 p-4 rounded">
+                <div class="plan-desc m-0">
+                  <h3>
+                    <img src="images/startup.png" alt=""style="width:30px">
+                    استماع
+                  </h3>
+                </div>
+                <div class="price-wrap mt-3 d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">8,440</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features mt-3">
+                  <ul class="list-bordered">
+                    <li>احصل على فتحة إعلانية لمدة 30 يومًا لنشر ممتلكاتك على باكرقبه</li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="profile-cartProducts.html" class="btn btn-maincolor"><span>Inquire now</span></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="pricing-plan mb-0 p-4 rounded">
+                <div class="plan-desc m-0">
+                  <h3>
+                    <img src="images/startup.png" alt=""style="width:30px">
+                    استماع
+                  </h3>
+                </div>
+                <div class="price-wrap mt-3 d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">8,440</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features mt-3">
+                  <ul class="list-bordered">
+                    <li>احصل على فتحة إعلانية لمدة 30 يومًا لنشر ممتلكاتك على باكرقبه</li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="profile-cartProducts.html" class="btn btn-maincolor"><span>Inquire now</span></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose-package">
+        <div class="container">
+          <h5>باقات الوكلاء</h5>
+          <div class="divider-45 d-none d-lg-block"></div>
+          <div class="row gy-5 c-gutter-60">
+            <div class="col-lg-3 col-12">
+              <div class="pricing-plan hero-bg rounded">
+                <div class="plan-name text-uppercase bg-maincolor">
+                  <h3>
+                    Starter
+                  </h3>
+                </div>
+                <div class="plan-desc">
+                  <img src="images/startup.png" alt=""style="width:60px">
+                </div>
+                <div class="price-wrap d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">8,440</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features">
+                  <ul class="list-bordered">
+                    <li>Upto 50 Listings</li>
+                    <li>Upto 12 Super Hot Credit</li>
+                    <li>Giga Port</li>
+                    <li>Upto 80 Hot Credits</li>
+                    <li>Upto 2000 Refresh Credits</li>
+                    <li>24/7 Normal Support</li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="plan-details.html" class="more-details">
+                    view more details
+                  </a>
+                  <button class="btn btn-maincolor" type="button" data-bs-toggle="modal" data-bs-target="#adv-pop" >
+                    <span>
+                      Inquire now
+                    </span>
                   </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <a href="single-adv.html" class="link"></a>
-                        باقة التيتانيوم
-                      </li>
-                      <li>
-                        <a href="single-adv.html" class="link"></a>
-                        باقة التيتانيوم
-                      </li>
-                    </ul>
-                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="pricing-plan mostPopular hero-bg rounded">
+                <div class="plan-name text-uppercase bg-maincolor">
+                  <h3>
+                    Starter
+                  </h3>
+                </div>
+                <div class="plan-desc">
+                  <img src="images/startup.png" alt=""style="width:60px">
+                </div>
+                <div class="price-wrap d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">49</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features">
+                  <ul class="list-bordered">
+                    <li>VOIP Service</li>
+                    <li>Online IPTV</li>
+                    <li>Giga Port</li>
+                    <li>24/7 Support</li>
+                    <li>Free TV Set Installation</li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="plan-details.html" class="more-details">
+                    view more details
+                  </a>
+                  <button class="btn btn-maincolor" type="button" data-bs-toggle="modal" data-bs-target="#adv-pop">
+                    <span>
+                      Inquire now
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="pricing-plan hero-bg rounded">
+                <div class="plan-name text-uppercase bg-maincolor">
+                  <h3>
+                    Starter
+                  </h3>
+                </div>
+                <div class="plan-desc">
+                  <img src="images/startup.png" alt=""style="width:60px">
+                </div>
+                <div class="price-wrap d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">49</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features">
+                  <ul class="list-bordered">
+                    <li>VOIP Service</li>
+                    <li>Online IPTV</li>
+                    <li>Giga Port</li>
+                    <li>24/7 Support</li>
+                    <li>Free TV Set Installation</li>
+
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="plan-details.html" class="more-details">
+                    view more details
+                  </a>
+                  <button class="btn btn-maincolor" type="button" data-bs-toggle="modal" data-bs-target="#adv-pop">
+                    <span>
+                      Inquire now
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="pricing-plan hero-bg rounded">
+                <div class="plan-name text-uppercase bg-maincolor">
+                  <h3>
+                    Starter
+                  </h3>
+                </div>
+                <div class="plan-desc">
+                  <img src="images/startup.png" alt=""style="width:60px">
+                </div>
+                <div class="price-wrap d-flex">
+                  <span class="plan-sign small-text">Rs</span>
+                  <span class="plan-price color-main">49</span>
+                  <span class="plan-decimals small-text">/mo</span>
+                </div>
+                <div class="plan-features">
+                  <ul class="list-bordered">
+                    <li>VOIP Service</li>
+                    <li>Online IPTV</li>
+                    <li>Giga Port</li>
+                    <li>24/7 Support</li>
+                    <li>VOIP Service</li>
+                    <li>Online IPTV</li>
+                    <li>Giga Port</li>
+                    <li>24/7 Support</li>
+                    <li>Free TV Set Installation</li>
+                    <li>
+                    </li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="plan-details.html" class="more-details">
+                    view more details
+                  </a>
+                  <button class="btn btn-maincolor" type="button" data-bs-toggle="modal" data-bs-target="#adv-pop">
+                    <span>
+                      Inquire now
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
     </div>
 
+    <div class="job-description rounded bg-light p-4 mb-5">
+      <h5 class="m-4">لماذا تعلن على موقعنا</h5>
+      <ul>
+        <li>
+          <span class="point"></span>
+          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
+        </li>
+        <li>
+          <span class="point"></span>
+          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
+        </li>
+        <li>
+          <span class="point"></span>
+          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
+        </li>
+        <li>
+          <span class="point"></span>
+          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
+        </li>
+        <li>
+          <span class="point"></span>
+          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة</p>
+        </li>
 
+        
+      </ul>
+    </div>
+    
     <footer>
       <div class="container footer-content">
         <div class="row">
@@ -495,12 +1007,71 @@
 
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="contactUsModal" aria-hidden="true" aria-labelledby="contactUsModalLabel">
+    <div class="blog">
+      <div class="modal fade" id="adv-pop" aria-hidden="true" aria-labelledby="adv-popLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">تواصل الان للعلان</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label class="py-2" for="">الاسم *</label>
+                  <input class="form-control" type="text" name="" id="" required>
+                </div>  
+                <div class="form-group">
+                  <label class="py-2" for="">البريد الالكتروني *</label>
+                  <input class="form-control" type="email" name="" id="" required>
+                </div>  
+                <div class="form-group">
+                  <label class="py-2" for="">رقم الجوال *</label>
+                  <input class="form-control" type="text" name="" id="" required>
+                </div>                  
+                <div class="form-group">
+                  <label class="py-2" for="">الفئة *</label>
+                  <input class="form-control" type="text" name="" id="" placeholder="تيتانيوم بلس" required>
+                </div>  
+                <div class="form-group">
+                  <label class="py-2" for="">نص الرسالة *</label>
+                  <textarea class="form-control" rows="6" placeholder="اكتب هنا" required></textarea>
+                </div> 
+                <div class="form-group">
+                  <label class="py-2" for="">كود التاكيد *</label>
+                  <input class="form-control" type="ىعةلاثق" name="" id="" required>
+                </div> 
+              </form>
+            </div>
+            <div class="w-100">
+              <button type="submit" class="custom-btn w-100" data-bs-target="#adv-popSuccess" data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close">ارسال</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="adv-popSuccess" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>تم ارسال الاعلان للمراجعه وسيتم التواصل معك بمجرد الموافقه عليه</p>
+              <img src="images/Ok-amico.png"  height="380px" alt="">
+            </div>
+            <div class="text-center">
+              <button type="button" class="custom-btn" data-bs-dismiss="modal" aria-label="Close">تم</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade custom-modal" id="contactUsModal" aria-hidden="true"
+      aria-labelledby="contactUsModalLabel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">اتصل بنا</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <ul>
@@ -520,12 +1091,14 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="contactWithMailModal" aria-hidden="true" aria-labelledby="contactWithMailModalLabel">
+    <div class="modal fade custom-modal" id="contactWithMailModal"
+      aria-hidden="true" aria-labelledby="contactWithMailModalLabel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">تواصل عبر الإيميل</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -546,7 +1119,8 @@
                 <textarea type="text" class="form-control"></textarea>
               </div>
               <div class="col-12">
-                <button class="button-mint w-100 py-3 m-0" data-bs-dismiss="modal" >إرسال</button>
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">إرسال</button>
               </div>
             </div>
           </div>
@@ -555,12 +1129,14 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="changeAreaUnitModal" aria-hidden="true" aria-labelledby="changeAreaUnitModalLabel">
+    <div class="modal fade custom-modal" id="changeAreaUnitModal"
+      aria-hidden="true" aria-labelledby="changeAreaUnitModalLabel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">تغيير وحدة المنطقة</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -578,7 +1154,8 @@
                 </select>
               </div>
               <div class="col-12">
-                <button class="button-mint w-100 py-3 m-0" data-bs-dismiss="modal" >حفظ</button>
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">حفظ</button>
               </div>
             </div>
           </div>
@@ -587,12 +1164,14 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="changeCurrencyModal" aria-hidden="true" aria-labelledby="changeCurrencyModalLabel">
+    <div class="modal fade custom-modal" id="changeCurrencyModal"
+      aria-hidden="true" aria-labelledby="changeCurrencyModalLabel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">تغيير العملة</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -610,7 +1189,8 @@
                 </select>
               </div>
               <div class="col-12">
-                <button class="button-mint w-100 py-3 m-0" data-bs-dismiss="modal" >حفظ</button>
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">حفظ</button>
               </div>
             </div>
           </div>
@@ -619,20 +1199,24 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel">
+    <div class="modal fade custom-modal" id="loginModal" aria-hidden="true"
+      aria-labelledby="loginModalLabel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">تسجيل دخول</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <div class="row">
               <div class="col-12 mb-4">
-                <button class="log-by-facebook"><i class="fa-brands fa-facebook-f"></i> &nbsp;&nbsp; تسجيل دخول بواسطة فيسبوك</button>
+                <button class="log-by-facebook"><i class="fa-brands
+                    fa-facebook-f"></i> &nbsp;&nbsp; تسجيل دخول بواسطة فيسبوك</button>
               </div>
               <div class="col-12 mb-4">
-                <button class="log-by-google"><img src="images/1534129544.png">&nbsp;&nbsp; تسجيل دخول بواسطة جوجل</button>
+                <button class="log-by-google"><img src="images/1534129544.png">&nbsp;&nbsp;
+                  تسجيل دخول بواسطة جوجل</button>
               </div>
               <div class="col-12 mb-4 text-center">
                 <h5>او</h5>
@@ -643,19 +1227,23 @@
               </div>
               <div class="col-12 mb-4">
                 <label class="form-label">الرقم السري</label>
-                <input type="password" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" id=""
+                  placeholder="">
               </div>
               <div class="col-12 mb-2">
-                <button class="button-mint w-100 py-3 m-0" data-bs-dismiss="modal">دخول</button>
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">دخول</button>
               </div>
               <div class="col-12 mb-4 d-flex justify-content-between">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value=""
+                    id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
                     تذكرني
                   </label>
                 </div>
-                <a data-bs-toggle="modal" href="#forgetPasswordModal" data-bs-dismiss="modal" role="button">نسيت كلمة المرور</a>
+                <a data-bs-toggle="modal" href="#forgetPasswordModal"
+                  data-bs-dismiss="modal" role="button">نسيت كلمة المرور</a>
               </div>
               <div class="col-12 text-center">
                 <p>هل لديك حساب ؟ &nbsp; <a href="register.html">إنشاء حساب جديد</a></p>
@@ -667,20 +1255,25 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="forgetPasswordModal" aria-hidden="true" aria-labelledby="forgetPasswordModalLabel" tabindex="-1">
+    <div class="modal fade custom-modal" id="forgetPasswordModal"
+      aria-hidden="true" aria-labelledby="forgetPasswordModalLabel"
+      tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">نسيت كلمة السر؟</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <div class="row">
               <div class="col-12 mb-4">
-                <button class="log-by-facebook"><i class="fa-brands fa-facebook-f"></i> &nbsp;&nbsp; تسجيل دخول بواسطة فيسبوك</button>
+                <button class="log-by-facebook"><i class="fa-brands
+                    fa-facebook-f"></i> &nbsp;&nbsp; تسجيل دخول بواسطة فيسبوك</button>
               </div>
               <div class="col-12 mb-4">
-                <button class="log-by-google"><img src="images/1534129544.png">&nbsp;&nbsp; تسجيل دخول بواسطة جوجل</button>
+                <button class="log-by-google"><img src="images/1534129544.png">&nbsp;&nbsp;
+                  تسجيل دخول بواسطة جوجل</button>
               </div>
               <div class="col-12 mb-4 text-center">
                 <h5>او</h5>
@@ -690,7 +1283,9 @@
                 <input type="tel" class="form-control" id="" placeholder="">
               </div>
               <div class="col-12 mb-2">
-                <button class="button-mint w-100 py-3 m-0" data-bs-toggle="modal" data-bs-target="#vireficationCodeModal" data-bs-dismiss="modal" role="button">استمرار</button>
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-toggle="modal" data-bs-target="#vireficationCodeModal"
+                  data-bs-dismiss="modal" role="button">استمرار</button>
               </div>
             </div>
           </div>
@@ -698,47 +1293,62 @@
       </div>
     </div>
 
-    <div class="modal fade custom-modal" id="vireficationCodeModal" aria-hidden="true" aria-labelledby="vireficationCodeModalLabel" tabindex="-1">
+    <div class="modal fade custom-modal" id="vireficationCodeModal"
+      aria-hidden="true" aria-labelledby="vireficationCodeModalLabel"
+      tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">كود التأكيد</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <h4>تم إرسال كود التأكيد على جوالك</h4>
             <form class="vir-form d-flex">
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="form-control vir-input" />
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="form-control vir-input" />
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="form-control vir-input" />
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
+              <input type="text" maxLength="1" size="1" min="0" max="9"
+                pattern="[0-9]{1}" class="form-control vir-input" />
             </form>
-            <button class="button-mint w-100 py-3 m-0" data-bs-toggle="modal" data-bs-target="#setNewPasswordModal" data-bs-dismiss="modal" role="button">استمرار</button>
+            <button class="button-mint w-100 py-3 m-0" data-bs-toggle="modal"
+              data-bs-target="#setNewPasswordModal" data-bs-dismiss="modal"
+              role="button">استمرار</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="setNewPasswordModal" aria-hidden="true" aria-labelledby="setNewPasswordModalLabel" tabindex="-1">
+    <div class="modal fade custom-modal" id="setNewPasswordModal"
+      aria-hidden="true" aria-labelledby="setNewPasswordModalLabel"
+      tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">نسيت كلمة السر؟</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"> <i class="bi bi-x-lg"></i> </button>
           </div>
           <div class="modal-body">
             <div class="row">
               <div class="col-12 mb-4">
                 <label class="form-label">كلمة المرور</label>
-                <input type="password" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" id=""
+                  placeholder="">
               </div>
               <div class="col-12 mb-4">
                 <label class="form-label">تأكيد كلمة المرور</label>
-                <input type="password" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" id=""
+                  placeholder="">
               </div>
               <div class="col-12 mb-2">
-                <button class="button-mint w-100 py-3 m-0" data-bs-dismiss="modal">استمرار</button>
+                <button class="button-mint w-100 py-3 m-0"
+                  data-bs-dismiss="modal">استمرار</button>
               </div>
             </div>
           </div>
